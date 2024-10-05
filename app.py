@@ -12,9 +12,17 @@ class WebApp:
     def loading():
         return render_template("loading.html")
     
-    @app.route("/planets-1")
-    def planet():
+    @app.route("/proxima")
+    def proxima():
+        return render_template("proxima.html")
+
+    @app.route("/planets")
+    def planets():
         return render_template("planets.html")
+
+    @app.route("/planets-1")
+    def planets_1():
+        return render_template("planets1.html")
     
     def start():
         # Logging Configuration
