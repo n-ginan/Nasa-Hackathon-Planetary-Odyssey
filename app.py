@@ -12,6 +12,10 @@ class WebApp:
     def loading():
         return render_template("loading.html")
     
+    @app.route("/planets-1")
+    def planet():
+        return render_template("planets.html")
+    
     def start():
         # Logging Configuration
         logging.basicConfig(
