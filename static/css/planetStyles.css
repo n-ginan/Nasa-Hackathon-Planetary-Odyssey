@@ -29,7 +29,7 @@ nav {
 }
 
 .logo span {
-    color: red;
+    color: rgb(238, 44, 238);
 }
 
 nav p {
@@ -47,13 +47,24 @@ nav p {
     align-items: center;
 }
 
-.planetDetails1,
-.planetDetails2{
+.leftSide,
+.rightSide {
     color: #fff;
+    height: 100vh;
     width: 25vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+.planetDetails,
+.planetDetails2{
+    height:60.5vh ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .planetInteraction {
@@ -62,16 +73,19 @@ nav p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .planetInteraction img {
-    width: 45vw;
+    width: 35vw;
     height: auto;
     position: relative;
+    margin-bottom: 10vh;
     z-index: 0;
     border: solid 1px #ffff;
     border-radius:50%;
+    cursor: pointer;
+    user-select: none;
 }
 .planetInteraction .planetMain{
     top: 50%;
@@ -88,13 +102,13 @@ nav p {
     font-weight: bold;
     cursor: pointer;
     user-select: none;
-    text-shadow: #000;
+    text-shadow: #3C2065 0 1px 1px;
 }
 
 .planetMain button {
     padding: 10px 20px;
     border: none;
-    background:red;
+    background:purple;
     color: #000;
     font-size: 18px;
     cursor: pointer;
@@ -104,5 +118,25 @@ nav p {
 
 .planetMain button:hover {
     background: #fff;
-    color: red;
+    color: purple;
+}
+.nextPlanet,
+.previousPlanet {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nextPlanet img,
+.previousPlanet img {
+    height:15vh;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa-solid{
+    font-size: 3rem;
+    color: purple;
 }
