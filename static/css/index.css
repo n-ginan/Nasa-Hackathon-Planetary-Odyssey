@@ -55,3 +55,8 @@ body{
     width: 52%;
     transform: rotate(10deg); 
 }
+
+/* Dragun */
+#startAdventurebtn {
+    cursor: pointer;
+}
