@@ -8,8 +8,10 @@ class QuizQuestion {
   constructor(question, answer, dialogue, choices) {
     this.question = question;
     this.correctAnswer = answer;
-    this.dialogue = dialogue;
     this.choices = choices;
+
+    // Dialogue format: { speaker: "", message: "" }
+    this.dialogue = dialogue;
   }
 
   /**
