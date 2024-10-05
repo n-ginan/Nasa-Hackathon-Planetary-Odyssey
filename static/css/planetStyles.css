@@ -102,6 +102,7 @@ nav p {
     font-weight: bold;
     cursor: pointer;
     user-select: none;
+    font-family: Inter;
     text-shadow: #3C2065 0 1px 1px;
 }
 
