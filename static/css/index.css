@@ -1,6 +1,8 @@
-.header {
-    font-family: "Inter", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 567;
-    font-style: normal;
+.tite{
+    color: white;
+    font-size: 200px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 240px;
+    word-wrap: break-word;
 }
