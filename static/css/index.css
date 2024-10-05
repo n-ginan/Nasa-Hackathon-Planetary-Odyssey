@@ -13,37 +13,12 @@ body{
     font-weight: 700; 
     line-height: 240px; 
     word-wrap: break-word
-}
-
-.chronicles {
-    left: 347px; 
-    top: 234px; position: absolute; 
-    text-align: center; 
-    color: white; 
-    font-size: 200px; 
-    font-family: Inter; 
-    font-weight: 700; 
-    line-height: 240px; 
-    word-wrap: break-word
-}
-
-.exoplanets {
-    left: 444px; 
-    top: 445px; 
-    position: absolute; 
-    text-align: center; 
-    color: white; 
-    font-size: 200px; 
-    font-family: Inter; 
-    font-weight: 700; 
-    line-height: 240px; 
-    word-wrap: break-word
-}
+} 
 
 .buttonText {
     text-align: center; 
     color: rgb(255, 255, 255); 
-    font-size: 25px; 
+    font-size: 23px; 
     font-family: Unispace; 
     font-weight: 700; 
     word-wrap: break-word
@@ -54,7 +29,6 @@ body{
     padding-bottom: 32px; 
     padding-left: 62px; 
     padding-right: 63px; 
-    position: relative;
     background: #3C2065; 
     box-shadow: 9px 10px 7.099999904632568px rgba(0, 0, 0, 0.25); 
     border-radius: 47px;
@@ -74,4 +48,33 @@ body{
     font-weight: 400; 
     line-height: 44.80px; 
     word-wrap: break-word
+}
+
+
+@keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.planet {
+    width: 3000px; /* Full image width */
+    height: 3000px; /* Full image height */
+    transform-origin: center center; /* Rotate around the center of the entire image */
+    animation: rotateImage 300s linear infinite;
+}
+
+.rollin {
+    width: 3500px; /* Full image width */
+    height: 3000px; /* Full image height */
+    overflow: hidden; /* Ensures only the quarter of the image is visible */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
