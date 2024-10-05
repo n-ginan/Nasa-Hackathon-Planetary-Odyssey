@@ -15,7 +15,7 @@ class WebApp:
             format="%(asctime)s [%(levelname)s]: %(message)s",
             datefmt="%b-%d-%Y %I:%M %p",  # %I for 12-hour format and %p for AM/PM
         )
-        logging.info("Web applicatin has been started!")
+        logging.info("Web application has been started!")
 
 if __name__ == "__main__":
     app.run()
