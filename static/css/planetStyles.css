@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/res/space.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.logo span {
+    color: red;
+}
+
+nav p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.planetDetails1,
+.planetDetails2{
+    color: #fff;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planetInteraction {
+    color: #fff;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.planetInteraction img {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    border: solid 1px #ffff;
+    border-radius:50%;
+}
+.planetInteraction .planetMain{
+    top: 50%;
+    bottom: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+}
+
+.planetName {
+    font-size: 7rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    text-shadow: #000;
+}
+
+.planetMain button {
+    padding: 10px 20px;
+    border: none;
+    background:red;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+}
+
+.planetMain button:hover {
+    background: #fff;
+    color: red;
+}
