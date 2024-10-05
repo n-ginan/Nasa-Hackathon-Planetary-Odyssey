@@ -6,7 +6,55 @@
     line-height: 240px;
     word-wrap: break-word;
 }
+
 body{
     background-image: url(../res/space.jpg); 
     background-size: cover; 
+}
+
+.chronicles {
+    left: 347px; 
+    top: 234px; position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 200px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    line-height: 240px; 
+    word-wrap: break-word
+}
+
+.exoplanets {
+    left: 444px; 
+    top: 445px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 200px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    line-height: 240px; 
+    word-wrap: break-word
+}
+
+.buttonText {
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+    font-size: 25px; 
+    font-family: Unispace; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+
+.letsExplore {
+    left: 725px; 
+    top: 701px; 
+    position: absolute; 
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+    font-size: 32px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    line-height: 44.80px; 
+    word-wrap: break-word
 }
