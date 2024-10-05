@@ -5,8 +5,8 @@ class Boss {
    * @param {QuizQuestion} dialogue - Array of dialogue strings.
    */
   constructor(codeName, name, questions) {
-    this.codeName = "";
-    this.name = "";
-    this.questions = [];
+    this.codeName = codeName;
+    this.name = name;
+    this.questions = questions;
   }
 }
