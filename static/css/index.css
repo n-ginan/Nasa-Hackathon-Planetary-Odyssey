@@ -49,32 +49,3 @@ body{
     line-height: 44.80px; 
     word-wrap: break-word
 }
-
-
-@keyframes rotateImage {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-.planet {
-    width: 3000px; /* Full image width */
-    height: 3000px; /* Full image height */
-    transform-origin: center center; /* Rotate around the center of the entire image */
-    animation: rotateImage 300s linear infinite;
-}
-
-.rollin {
-    width: 3500px; /* Full image width */
-    height: 3000px; /* Full image height */
-    overflow: hidden; /* Ensures only the quarter of the image is visible */
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
