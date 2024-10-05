@@ -1,3 +1,4 @@
+
 body{
     background-image: url(../res/space.jpg); 
     background-size: cover; 
@@ -5,22 +6,11 @@ body{
     overflow: hidden;
 }
 
-.rock {
+#rock{
+    object-fit: cover;
     width: 100%;
-    top: -30%;
-    left: 0%;
-    position: absolute;
-}
-
-.dialogue {
-    width: 100%; 
-    height: 20%;  
-    bottom: 0%; 
+    bottom: -10%;
     position: absolute; 
-    color: white; 
-    font-size: 32px; 
-    font-family: Inter; 
-    font-weight: 400; 
-    line-height: 44.80px; 
-    word-wrap: break-word;
+    left: 0; 
+    right: 0;
 }

@@ -5,51 +5,6 @@ body{
     overflow: hidden;
 }
 
-.headingTitle{
-    text-align: center; 
-    color: white; 
-    font-size: 200px; 
-    font-family: Inter; 
-    font-weight: 700; 
-    line-height: 240px; 
-    word-wrap: break-word
-} 
-
-.buttonText {
-    text-align: center; 
-    color: rgb(255, 255, 255); 
-    font-size: 23px; 
-    font-family: Unispace; 
-    font-weight: 700; 
-    word-wrap: break-word
-}
-
-.buttonStyle {
-    padding-top: 32px; 
-    padding-bottom: 32px; 
-    padding-left: 62px; 
-    padding-right: 63px; 
-    background: #3C2065; 
-    box-shadow: 9px 10px 7.099999904632568px rgba(0, 0, 0, 0.25); 
-    border-radius: 47px;
-    justify-content: center; 
-    align-self: center;
-    display: inline-flex;
-}
-
-.letsExplore {
-    left: 725px; 
-    top: 701px; 
-    position: absolute; 
-    text-align: center; 
-    color: rgb(255, 255, 255); 
-    font-size: 32px; 
-    font-family: Inter; 
-    font-weight: 400; 
-    line-height: 44.80px; 
-    word-wrap: break-word
-}
-
 .spaceship {
     height: 80%;
     width: 45%;
