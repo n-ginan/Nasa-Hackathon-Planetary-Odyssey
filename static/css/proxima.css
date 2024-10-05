@@ -1,0 +1,5 @@
+body{
+    background-image: url(../res/space.jpg); 
+    background-size: cover; 
+    align-items: center;
+}
