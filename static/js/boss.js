@@ -1,3 +1,5 @@
+import QuizQuestion from "./quiz_question.js";
+
 class Boss {
   /**
    * @param {string} codeName
@@ -36,3 +38,5 @@ class Boss {
     return this.#questions;
   }
 }
+
+export default Boss;

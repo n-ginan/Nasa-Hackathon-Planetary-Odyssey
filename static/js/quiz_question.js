@@ -54,3 +54,5 @@ class QuizQuestion {
     return this.#choices;
   }
 }
+
+export default QuizQuestion;

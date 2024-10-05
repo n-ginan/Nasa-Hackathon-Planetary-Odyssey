@@ -1,4 +1,5 @@
-import Boss from "./boss";
+import Boss from "./boss.js";
+import QuizQuestion from "./quiz_question.js";
 
 function firstBoss() {
   const question1 = new QuizQuestion(
@@ -68,7 +69,7 @@ function firstBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return Boss("TOI-1231", "Specter of the Crystalki", quizQuestions);
+  return new Boss("TOI-1231", "Specter of the Crystalki", quizQuestions);
 }
 
 function secondBoss() {
@@ -139,7 +140,7 @@ function secondBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return Boss("Wolf 1061 c", "Gorgon of Trelkin", quizQuestions);
+  return new Boss("Wolf 1061 c", "Gorgon of Trelkin", quizQuestions);
 }
 
 function thirdBoss() {
@@ -210,7 +211,7 @@ function thirdBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return Boss("GJ 1002 b", "Golem of the Kartharans", quizQuestions);
+  return new Boss("GJ 1002 b", "Golem of the Kartharans", quizQuestions);
 }
 
 function fourthBoss() {
@@ -281,7 +282,7 @@ function fourthBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return Boss("Proxima Centauri b", "Echo Warden", quizQuestions);
+  return new Boss("Proxima Centauri b", "Echo Warden", quizQuestions);
 }
 
 function fifthBoss() {
@@ -353,7 +354,7 @@ function fifthBoss() {
   );
 
   const quizQuestions = [question1, question2, question3];
-  return Boss("Epsilon Eridani B", "Graviton Warden", quizQuestions);
+  return new Boss("Epsilon Eridani B", "Graviton Warden", quizQuestions);
 }
 
 function sixthBoss() {
@@ -425,7 +426,7 @@ function sixthBoss() {
   );
 
   const quizQuestions = [question1, question2, question3];
-  return Boss("Gliese 832 C", "Celestial Sentinel", quizQuestions);
+  return new Boss("Gliese 832 C", "Celestial Sentinel", quizQuestions);
 }
 
 export const TOI_1231_B = firstBoss();
