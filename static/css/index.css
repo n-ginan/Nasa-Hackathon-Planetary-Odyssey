@@ -49,3 +49,7 @@ body{
     line-height: 44.80px; 
     word-wrap: break-word
 }
+
+#startAdventureBtn:hover {
+    cursor: pointer;
+}
