@@ -139,4 +139,9 @@ nav p {
 .fa-solid{
     font-size: 3rem;
     color: purple;
+    cursor:pointer;
+}
+
+.fa-solid:hover{
+    color: #8e4af4; 
 }
