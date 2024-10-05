@@ -14,8 +14,8 @@ body {
   }
   
 .planet {
-    width: 1800px; /* Full image width */
-    height: 1300px; /* Full image height */
+    width: 1500px; /* Full image width */
+    height: 1500px; /* Full image height */
     transform-origin: center center; /* Rotate around the center of the entire image */
     animation: rotateImage 300s linear infinite;
 }
