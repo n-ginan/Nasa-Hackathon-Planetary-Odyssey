@@ -6,3 +6,7 @@
     line-height: 240px;
     word-wrap: break-word;
 }
+body{
+    background-image: url(../res/space.jpg); 
+    background-size: cover; 
+}
