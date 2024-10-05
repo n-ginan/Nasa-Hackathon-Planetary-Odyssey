@@ -6,10 +6,10 @@ class QuizQuestion {
    * @param {string[]} choices - Array of possible answer choices.
    */
   constructor(question, answer, dialogue, choices) {
-    this.#question = question; // Private variable
-    this.#correctAnswer = answer; // Private variable
-    this.#dialogue = dialogue; // Private variable
-    this.#choices = choices; // Private variable
+    this.#question = question;
+    this.#correctAnswer = answer;
+    this.#dialogue = dialogue; // Format: [{speaker: "name", message: "content"}]
+    this.#choices = choices;
   }
 
   // Private variables
