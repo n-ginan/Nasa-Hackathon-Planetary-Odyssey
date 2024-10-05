@@ -6,7 +6,11 @@ app = Flask(__name__)
 class WebApp:
     @app.route("/")
     def index():
-        return render_template('index.html')
+        return render_template("index.html")
+    
+    @app.route("/loading")
+    def loading():
+        return render_template("loading.html")
     
     def start():
         # Logging Configuration
