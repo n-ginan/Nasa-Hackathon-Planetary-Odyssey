@@ -50,8 +50,14 @@ body{
     word-wrap: break-word
 }
 
+<<<<<<< HEAD
 .spaceship {
     height: 80%;
     width: 52%;
     transform: rotate(10deg); 
+=======
+/* Dragun */
+#startAdventureBtn:hover {
+    cursor: pointer;
+>>>>>>> 980635adc301b2e69dfeaf0d449430ac8838ad1f
 }
