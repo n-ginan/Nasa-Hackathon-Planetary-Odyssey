@@ -84,7 +84,7 @@ function secondBoss() {
       {
         speaker: "Neil",
         message:
-          "I’ve seen worlds like this, tidally locked, torn between constant daylight and endless night. It’s not just the land that splits; societies crack under the pressure too.",
+          "I've seen worlds like this, tidally locked, torn between constant daylight and endless night. It's not just the land that splits; societies crack under the pressure too.",
       },
     ],
     [
@@ -95,22 +95,22 @@ function secondBoss() {
     ]
   );
   const question2 = new QuizQuestion(
-    "What feature of Wolf 1061 c’s surface is caused by its proximity to its star?",
+    "What feature of Wolf 1061 c's surface is caused by its proximity to its star?",
     "B",
     [
       {
         speaker: "Gorgon of Trelkin",
         message:
-          "You claim to seek the knowledge hidden within these stones, but what do you know of Wolf 1061 c’s geology? Answer me!",
+          "You claim to seek the knowledge hidden within these stones, but what do you know of Wolf 1061 c's geology? Answer me!",
       },
       {
         speaker: "Neil",
         message:
-          "This planet’s proximity to its star means extreme temperature differences. I don’t just know it—I’ve calculated it.",
+          "This planet's proximity to its star means extreme temperature differences. I don't just know it—I've calculated it.",
       },
     ],
     [
-      "A. Massive glaciers formed by the star’s cold emission",
+      "A. Massive glaciers formed by the star's cold emission",
       "B. A dry, rocky surface with extreme temperature differences",
       "C. Frequent volcanic eruptions due to tidal heating",
       "D. An ocean-covered surface with continuous storms",
@@ -155,18 +155,18 @@ function thirdBoss() {
       {
         speaker: "Neil",
         message:
-          "I’m not here to tame this planet. I’m here to understand it—and to make sure we don’t repeat the same mistakes.",
+          "I'm not here to tame this planet. I'm here to understand it—and to make sure we don't repeat the same mistakes.",
       },
     ],
     [
       "A. One side is in constant daylight, the other in eternal darkness.",
       "B. It experiences long seasons of extreme cold and heat.",
-      "C. The planet’s rotation speeds up its atmosphere, causing violent storms.",
+      "C. The planet's rotation speeds up its atmosphere, causing violent storms.",
       "D. Both sides experience extreme volcanic activity.",
     ]
   );
   const question2 = new QuizQuestion(
-    "What effect does GJ 1002 b’s proximity to its star have on its surface?",
+    "What effect does GJ 1002 b's proximity to its star have on its surface?",
     "B",
     [
       {
@@ -177,7 +177,7 @@ function thirdBoss() {
       {
         speaker: "Neil",
         message:
-          "They uncovered tectonic activity—violent shifts beneath the surface caused by the intense gravitational pull of the star. It’s what created the underground tunnels they once lived in.",
+          "They uncovered tectonic activity—violent shifts beneath the surface caused by the intense gravitational pull of the star. It's what created the underground tunnels they once lived in.",
       },
     ],
     [
@@ -199,7 +199,7 @@ function thirdBoss() {
       {
         speaker: "Neil",
         message:
-          "I’ve studied how gravity warps time, how it distorts everything around it. The closer you get, the slower time flows.",
+          "I've studied how gravity warps time, how it distorts everything around it. The closer you get, the slower time flows.",
       },
     ],
     [
@@ -215,7 +215,7 @@ function thirdBoss() {
 
 function fourthBoss() {
   const question1 = new QuizQuestion(
-    "Proxima Centauri b orbits within its star’s habitable zone. What does this mean for the planet’s potential for life?",
+    "Proxima Centauri b orbits within its star's habitable zone. What does this mean for the planet's potential for life?",
     "B",
     [
       {
@@ -237,7 +237,7 @@ function fourthBoss() {
     ]
   );
   const question2 = new QuizQuestion(
-    "What allows Proxima Centauri b’s dense forests to thrive despite receiving less sunlight than Earth?",
+    "What allows Proxima Centauri b's dense forests to thrive despite receiving less sunlight than Earth?",
     "A",
     [
       {
@@ -248,7 +248,7 @@ function fourthBoss() {
       {
         speaker: "Neil",
         message:
-          "Proxima Centauri b receives less sunlight than Earth, but the forests here have evolved. The trees capture and store light in ways we’re only beginning to understand.",
+          "Proxima Centauri b receives less sunlight than Earth, but the forests here have evolved. The trees capture and store light in ways we're only beginning to understand.",
       },
     ],
     [
@@ -265,12 +265,12 @@ function fourthBoss() {
       {
         speaker: "Echo Warden",
         message:
-          "Perhaps you know something of this world, but the forest’s roots run deep. If you wish to survive, tell me what binds this ecosystem together.",
+          "Perhaps you know something of this world, but the forest's roots run deep. If you wish to survive, tell me what binds this ecosystem together.",
       },
       {
         speaker: "Neil",
         message:
-          "Fungi are the hidden network in any forest. They connect trees, share nutrients, and store information—just like the knowledge we’re gathering to stop the Voidstorm.",
+          "Fungi are the hidden network in any forest. They connect trees, share nutrients, and store information—just like the knowledge we're gathering to stop the Voidstorm.",
       },
     ],
     [
@@ -297,35 +297,35 @@ function fifthBoss() {
       {
         speaker: "Neil",
         message:
-          "I know what I’m dealing with—gas giants have immense gravitational forces, but they also hold incredible secrets. The Sigma Stone is here, and I’ll unlock its power.",
+          "I know what I'm dealing with—gas giants have immense gravitational forces, but they also hold incredible secrets. The Sigma Stone is here, and I'll unlock its power.",
       },
     ],
     [
       "A. Objects float freely in zero gravity",
       "B. Objects are pulled in different directions by rapid winds",
-      "C. Objects are drawn towards the planet’s core by strong gravitational forces",
+      "C. Objects are drawn towards the planet's core by strong gravitational forces",
       "D. Objects remain unaffected due to low gravity",
     ]
   );
   const question2 = new QuizQuestion(
-    "How does Epsilon Eridani B’s gravity compare to Earth’s?",
+    "How does Epsilon Eridani B's gravity compare to Earth's?",
     "C",
     [
       {
         speaker: "Graviton Warden",
         message:
-          "You understand gravity, but the forces at play here are far more complex. The Varaith thought they could bend it to their will. Tell me, how does the gravity of this planet compare to Earth’s?",
+          "You understand gravity, but the forces at play here are far more complex. The Varaith thought they could bend it to their will. Tell me, how does the gravity of this planet compare to Earth's?",
       },
       {
         speaker: "Neil",
         message:
-          "Epsilon Eridani B has far greater mass than Earth, so its gravitational pull is stronger. But it’s that very force that makes it so dangerous to navigate.",
+          "Epsilon Eridani B has far greater mass than Earth, so its gravitational pull is stronger. But it's that very force that makes it so dangerous to navigate.",
       },
     ],
     [
-      "A. It is weaker than Earth’s",
-      "B. It is about the same as Earth’s",
-      "C. It is slightly weaker than Jupiter’s but stronger than Earth’s",
+      "A. It is weaker than Earth's",
+      "B. It is about the same as Earth's",
+      "C. It is slightly weaker than Jupiter's but stronger than Earth's",
       "D. It is stronger than both Earth and Jupiter",
     ]
   );
@@ -341,7 +341,7 @@ function fifthBoss() {
       {
         speaker: "Neil",
         message:
-          "I’ve studied how gravity affects time, space, and even light. I know how to navigate its dangers—and I’m not leaving without the Sigma Stone.",
+          "I've studied how gravity affects time, space, and even light. I know how to navigate its dangers—and I'm not leaving without the Sigma Stone.",
       },
     ],
     [
@@ -369,13 +369,13 @@ function sixthBoss() {
       {
         speaker: "Neil",
         message:
-          "I’ve seen storms like this—fueled by strong winds, thick atmospheres, and planetary rotation. But I didn’t travel across the galaxy to be stopped by bad weather.",
+          "I've seen storms like this—fueled by strong winds, thick atmospheres, and planetary rotation. But I didn't travel across the galaxy to be stopped by bad weather.",
       },
     ],
     [
       "A. High levels of atmospheric carbon",
-      "B. The planet’s rapid rotation and thick atmosphere",
-      "C. The planet’s proximity to its sun",
+      "B. The planet's rapid rotation and thick atmosphere",
+      "C. The planet's proximity to its sun",
       "D. Volcanic activity heating the air",
     ]
   );
@@ -391,14 +391,14 @@ function sixthBoss() {
       {
         speaker: "Neil",
         message:
-          "This planet’s gravity traps gases in its atmosphere, making it dense. The storms are just a side effect of the sheer weight of this planet’s air.",
+          "This planet's gravity traps gases in its atmosphere, making it dense. The storms are just a side effect of the sheer weight of this planet's air.",
       },
     ],
     [
-      "A. The planet’s slow rotation",
+      "A. The planet's slow rotation",
       "B. High levels of nitrogen",
       "C. Intense volcanic activity",
-      "D. The planet’s strong gravity",
+      "D. The planet's strong gravity",
     ]
   );
   const question3 = new QuizQuestion(
@@ -408,12 +408,12 @@ function sixthBoss() {
       {
         speaker: "Celestial Sentinel",
         message:
-          "You may understand this world’s storms, but do you understand the forces that hold the cosmos together? Tell me, what binds the galaxies themselves?",
+          "You may understand this world's storms, but do you understand the forces that hold the cosmos together? Tell me, what binds the galaxies themselves?",
       },
       {
         speaker: "Neil",
         message:
-          "Dark matter—an invisible force that holds galaxies together. You may hide the Sigma Stone, but I know what drives the universe’s structure.",
+          "Dark matter—an invisible force that holds galaxies together. You may hide the Sigma Stone, but I know what drives the universe's structure.",
       },
     ],
     [
