@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const LOADING_SECONDS = 5;
+  // Change this constant to modify the loading time
+  const SECONDS = 5;
 
   setTimeout(() => {
     window.location.href = "/planets-1";
