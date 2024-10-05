@@ -1,15 +1,18 @@
-.tite{
-    color: rgb(0, 0, 0);
-    font-size: 200px;
-    font-family: Inter;
-    font-weight: 700;
-    line-height: 240px;
-    word-wrap: break-word;
-}
-
 body{
     background-image: url(../res/space.jpg); 
     background-size: cover; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.headingTitle{
+    text-align: center; 
+    color: white; 
+    font-size: 200px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    line-height: 240px; 
+    word-wrap: break-word
 }
 
 .chronicles {
@@ -44,6 +47,20 @@ body{
     font-family: Unispace; 
     font-weight: 700; 
     word-wrap: break-word
+}
+
+.buttonStyle {
+    padding-top: 32px; 
+    padding-bottom: 32px; 
+    padding-left: 62px; 
+    padding-right: 63px; 
+    position: relative;
+    background: #3C2065; 
+    box-shadow: 9px 10px 7.099999904632568px rgba(0, 0, 0, 0.25); 
+    border-radius: 47px;
+    justify-content: center; 
+    align-self: center;
+    display: inline-flex;
 }
 
 .letsExplore {
