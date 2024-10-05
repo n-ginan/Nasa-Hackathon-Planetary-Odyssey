@@ -49,3 +49,9 @@ body{
     line-height: 44.80px; 
     word-wrap: break-word
 }
+
+.spaceship {
+    height: 80%;
+    width: 52%;
+    transform: rotate(10deg); 
+}
