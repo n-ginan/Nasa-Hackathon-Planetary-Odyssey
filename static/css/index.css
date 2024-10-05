@@ -50,6 +50,7 @@ body{
     word-wrap: break-word
 }
 
+/* Dragun */
 #startAdventureBtn:hover {
     cursor: pointer;
 }
