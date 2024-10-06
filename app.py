@@ -34,6 +34,10 @@ class WebApp:
         boss_name = request.args.get("boss_name")
         return render_template("boss.html", boss_name="Default Boss Name" if not boss_name else boss_name)
 
+    @app.route("/quiz")
+    def quiz():
+        return render_template("quiz.html", boss_code=request.args.get("boss_code"))
+
     @app.route("/defeated-boss", methods=["POST"])
     def defeated_boss():
         # HTML file not created yet
