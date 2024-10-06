@@ -63,9 +63,19 @@ nav p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
+
+.planetDetails > * {
+    margin: 10px 0; /* Adds vertical space between child elements inside planetDetails */
+}
+
+.planetDetails2 > * {
+    margin: 10px 0; /* Adds vertical space between child elements inside planetDetails2 */
+}
+
 
 .planetInteraction {
     color: #fff;
@@ -129,6 +139,16 @@ nav p {
     justify-content: space-evenly;
 }
 
+.nextPlanet h3,
+ .previousPlanet h3 {
+    width: 50%;
+ }
+
+ .nextPlanet h3 {
+    text-align: end;
+ }
+
+
 .nextPlanet img,
 .previousPlanet img {
     height:15vh;
@@ -144,4 +164,18 @@ nav p {
 
 .fa-solid:hover{
     color: #8e4af4; 
+}
+
+.planetDetails{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.planetDetails2{
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
