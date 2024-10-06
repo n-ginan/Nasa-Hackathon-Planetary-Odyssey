@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Player health components
   let playerHeartCount = 3;
+  const pathToBrokenHeartImg = "/static/res/broken_heart.png";
   const hearts = {
     1: document.getElementById("heart1"),
     2: document.getElementById("heart2"),
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function damagePlayer() {
-    hearts[playerHeartCount--].setAttribute("src", ""); // Set path to broken heart
+    hearts[playerHeartCount--].setAttribute("src", pathToBrokenHeartImg); // Set path to broken heart
     if (playerHeartCount <= 0) {
       alert("You have lost all your hearts!");
       window.location.href = `/boss-transition?boss_code${bossCode}&transition_type=encounter`;
