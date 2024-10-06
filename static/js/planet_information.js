@@ -8,42 +8,48 @@ import {
 } from "./quiz_data.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const bossCode = document.getElementById("bossCode");
-  const proceedBtn = document.getElementById("proceedButton");
+  const bossCode = document.getElementById("bossCode").innerText;
+  const proceedBtn = document.getElementById("proceedBtn");
   const planetHeader = document.getElementById("planetHeader");
   const planetImage = document.getElementById("planetImage");
   const firstParagraph = document.getElementById("firstParagraph");
   const secondParagraph = document.getElementById("secondParagraph");
   const planetContent = [
     {
-      code: TOI_1231_B.getCodeName(),
+      code: "TOI_1231_B",
       body: TOI_1231_B.getInformation(),
       imageLocation: "/static/res/TOI-1231_planet.PNG",
+      destination: bossTransition("TOI_1231_B"),
     },
     {
-      code: L_98_59_D.getCodeName(),
+      code: "L_98_59_D",
       body: L_98_59_D.getInformation(),
       imageLocation: "/static/res/Wolf_1061_c_planet.png",
+      destination: bossTransition("L_98_59_D"),
     },
     {
-      code: GJ_1002_B.getCodeName(),
+      code: "GJ_1002_B",
       body: GJ_1002_B.getInformation(),
       imageLocation: "/static/res/GJ_1002_b_planet.png",
+      destination: bossTransition("GJ_1002_B"),
     },
     {
-      code: PROXIMA_CENTAURI_B.getCodeName(),
+      code: "PROXIMA_CENTAURI_B",
       body: PROXIMA_CENTAURI_B.getInformation(),
       imageLocation: "/static/res/Proxima_Centauri_b_planet.PNG",
+      destination: bossTransition("PROXIMA_CENTAURI_B"),
     },
     {
-      code: EPSILON_ERIDANI_B.getCodeName(),
+      code: "EPSILON_ERIDANI_B",
       body: EPSILON_ERIDANI_B.getInformation(),
       imageLocation: "/static/res/Epsilon_Eridani_B_planet.PNG",
+      destination: bossTransition("EPSILON_ERIDANI_B"),
     },
     {
-      code: GLIESE_832_C.getCodeName(),
+      code: "GLIESE_832_C",
       body: GLIESE_832_C.getInformation(),
       imageLocation: "/static/res/Gliese_832_C_planet.PNG",
+      destination: bossTransition("GLIESE_832_C"),
     },
   ];
 
@@ -53,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Finds and sets the chosen planet via its code name
     for (let planet of planetContent) {
+      console.log(planet.code === bossCode, planet.code, bossCode);
       if (planet.code === bossCode) {
         chosenPlanet = planet;
         break;
@@ -64,6 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
     planetImage.setAttribute("src", chosenPlanet.imageLocation);
     firstParagraph.innerText = chosenPlanet.body[0];
     secondParagraph.innerText = chosenPlanet.body[1];
+  }
+
+  function bossTransition(bossCode) {
+    return `/boss-transition?boss_code=${bossCode}&transition_type=encounter`;
   }
 
   // Event listeners

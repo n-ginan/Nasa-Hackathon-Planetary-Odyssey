@@ -7,13 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Destination components
   const destinations = [
-    "/loading",
-    bossTransition("L_98_59_D"),
-    bossTransition("GJ_1002_B"),
-    bossTransition("PROXIMA_CENTAURI_B"),
-    bossTransition("EPSILON_ERIDANI_B"),
-    bossTransition("GLIESE_832_C"),
-    bossTransition("TOI_1231_B"),
+    planetInformation("TOI_1231_B"),
+    planetInformation("L_98_59_D"),
+    planetInformation("GJ_1002_B"),
+    planetInformation("EPSILON_ERIDANI_B"),
+    planetInformation("GLIESE_832_C"),
+    planetInformation("PROXIMA_CENTAURI_B"),
   ];
   let destinationIndex = 0;
 
@@ -37,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Utility functions
-  function bossTransition(bossCode) {
-    return `/boss-transition?boss_code=${bossCode}&transition_type=encounter`;
+  function planetInformation(bossCode) {
+    return `/planet-information?boss_code=${bossCode}`;
   }
 });
