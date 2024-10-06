@@ -38,4 +38,3 @@ Neil’s journey will be perilous, but with his vast knowledge of the cosmos and
 
 - [The Space Rock Hackathon Team (Our Team)](https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/the-space-rock/?tab=members)
 - [NASA Hackathon Page](https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/manila/)
-- [Figma Design](https://www.figma.com/design/QMILgqEeeRJW6jhcCpRT5O/Exoplanets-DRAFT?node-id=43-7&m=dev)
