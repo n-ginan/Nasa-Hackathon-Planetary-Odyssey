@@ -69,7 +69,16 @@ function firstBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return new Boss("TOI-1231", "Specter of the Crystalki", quizQuestions);
+  const information = [
+    "90 light years away from Earth, there exists the Neptune-like exoplanet, TOI-1231 which was discovered in 2021 through a transit.  This planet was discovered by a large team of astronomers led by exoplanet researchers,  Dr. Jennifer Burt  from NASA’s Jet Propulsion Laboratory and Professor Diana Dragomir from University of New Mexico . TOI-1231 net is 15.4 times the mass of Earth while also being three and a half times bigger than Earth. It can orbit around its star, a red dwarf star smaller but older than our solar system’s Sun, in just 24.2 days.  Astronomers also describe it as one of the “coolest” smaller exoplanets that has a temperature comparable to Earth’s at 134 degrees Fahrenheit or 57 degrees Celsius, despite being relatively close to its star. This is due to its star being cooler and less bright too compared to our other stars like our Sun.",
+    "Astronomers are speculating that TOI-1231 b comprises of a gaseous world with a rich atmosphere. Bringing that into light, astronomers allegedly saw evidences of clous being existent in the said planet. However, despite having an atmosphere and a fairly cooler range of temperatures in the said planet, it was cited that this exoplanet is not habitable due to its size.  Jennifer Burt, a NASA JPL scientist stated that further observations of  TOI-1231 b  in the future will help identity how common or rare it is for water clouds to form in these type of planets.",
+  ];
+  return new Boss(
+    "TOI-1231",
+    "Specter of the Crystalki",
+    quizQuestions,
+    information
+  );
 }
 
 function secondBoss() {
@@ -140,7 +149,16 @@ function secondBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return new Boss("Wolf 1061 c", "Gorgon of Trelkin", quizQuestions);
+  const information = [
+    "Just 14 light years away lies a Super Earth comprising a total mass of 4.3 Earths, Wolf 1061 c. It takes only 17.9 days for it to complete an orbit around its red dwarf ‘M-type’ star, Wolf 1061c which is speculated to be much cooler than our Sun. Wolf 1061 c was first discovered in 2015 by astronomers from the University of New South Wales Australia. It was one of three planets they found orbiting around the red dwarf star, Wolf 1061. This discovery struck excitement as it was found to be rocky  and was declared to be one of the most nearest potentially habitable exoplanets from Earth. UNSW’s Dr Duncan Wright also cited that the said exoplanet has a solid surface and lies within the ‘Goldilocks’ zone or the habitable zone wherein the conditions for liquid water and even life to exist are suitable.",
+    "While there are an abundance of rocky planets that are also near from Earth, a lot of them are inhabitable as well. However, Dr. Wright also added that Wolf 1061c might be tidally locked, meaning it will always be facing its star. In addition, he mentioned that the team will further investigate the planets around Wolf 1061. Researcher, Rob Wittenmyer, stated that if the planets pass across the face of their star, it may be possible to study the atmospheres of the said exoplanets in the future which will help determine whether they would be able to support life.",
+  ];
+  return new Boss(
+    "Wolf 1061 c",
+    "Gorgon of Trelkin",
+    quizQuestions,
+    information
+  );
 }
 
 function thirdBoss() {
@@ -211,7 +229,16 @@ function thirdBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return new Boss("GJ 1002 b", "Golem of the Kartharans", quizQuestions);
+  const information = [
+    "GJ 1002 b, a super Earth exoplanet discovered in 2022, sits 16 light-years away from Earth orbiting the red-dwarf star, GJ 1002 b. Its mass is equivalent to 1.08 times of Earth’s. and it can orbit around its star completely in just 10.3 days. This means that a year lasts only 10.3 days on this exoplanet. GJ 1002 b was discovered along with another exoplanet relatively close to it, GJ 1002 . Both of which lie within the ‘Goldilocks zone’ or habitable zone. With that being said, these exoplanets are both classified as potentially habitable planets for its distance from its star allows liquid water to form on the planets’ surface.",
+    "GJ 1002 b was discovered by an international team led by Alejandro Suárez Mascareño of the University of La Laguna, Spain using the radial velocity methods. As stated in the NASA Exoplanets Archive, GJ 1002 b along with GJ1002 c, are amongst a small group of exoplanets that are described to be small words in the habitable zone. Planets in this category are typically 1.5 times the size of Earth or less than five times the mass of Earth.",
+  ];
+  return new Boss(
+    "GJ 1002 b",
+    "Golem of the Kartharans",
+    quizQuestions,
+    information
+  );
 }
 
 function fourthBoss() {
@@ -282,7 +309,16 @@ function fourthBoss() {
     ]
   );
   const quizQuestions = [question1, question2, question3];
-  return new Boss("Proxima Centauri b", "Echo Warden", quizQuestions);
+  const information = [
+    "Proxima Centauri b, another fascinating exoplanet, orbiting the closest star to our solar system, Proxima Centauri. Announced in 2016, this super-Earth boasts a mass 1.07 times that of Earth and completes its orbit in just 11.2 days, located 0.04856 AU from its star—only 7.5 million kilometers away. Discovered using the radial velocity method, Proxima b is a prime target for scientists searching for Earth-like planets in nearby star systems.",
+    "Back in 2013, scientists led by Mikko Tuomi of the University of Hertfordshire began analyzing Proxima Centauri using the HARPS and UVES spectrographs, hinting at the existence of planets in the system. Their hunch was confirmed in 2016 when the European Southern Observatory (ESO) launched the Pale Red Dot campaign, led by Spanish astronomer Guillem Anglada-Escudé. For two months, the HARPS spectrograph at ESO's La Silla Observatory continuously tracked Proxima Centauri's minute shifts in radial velocity, eventually leading to the confirmation of Proxima b's existence.",
+  ];
+  return new Boss(
+    "Proxima Centauri b",
+    "Echo Warden",
+    quizQuestions,
+    information
+  );
 }
 
 function fifthBoss() {
@@ -354,7 +390,16 @@ function fifthBoss() {
   );
 
   const quizQuestions = [question1, question2, question3];
-  return new Boss("Epsilon Eridani B", "Graviton Warden", quizQuestions);
+  const information = [
+    "Epsilon Eridani b, also known by its mythological name *AEgir*, is a gas giant exoplanet orbiting a K-type star 10.5 light-years away in the constellation Eridanus. Discovered in 2000, this exoplanet has a mass about 0.66 times that of Jupiter and takes 7.3 Earth years to complete a single orbit around its star, located 3.53 AU away from it. Despite its similarities to Jupiter, Epsilon Eridani b remains enigmatic, with much about its orbit and characteristics still shrouded in mystery.",
+    "Astronomers initially detected Epsilon Eridani b through the radial velocity method, a technique that reveals the presence of exoplanets by measuring a star’s slight movements caused by gravitational tugs from orbiting bodies. Even with decades of observation, no direct image of this distant gas giant has ever been captured. But hope lies with advanced instruments like the James Webb Space Telescope (JWST), which may soon unveil more about this elusive planet’s composition and behavior.",
+  ];
+  return new Boss(
+    "Epsilon Eridani B",
+    "Graviton Warden",
+    quizQuestions,
+    information
+  );
 }
 
 function sixthBoss() {
@@ -426,7 +471,16 @@ function sixthBoss() {
   );
 
   const quizQuestions = [question1, question2, question3];
-  return new Boss("Gliese 832 C", "Celestial Sentinel", quizQuestions);
+  const information = [
+    "Gliese 832 c, discovered in 2014, is a super-Earth exoplanet orbiting the red-dwarf star Gliese 832, located about 16 light-years away in the constellation Grus. This planet, with a mass 5.4 times that of Earth and a radius of 1.7 Earth radii, completes an orbit around its star in just 35.68 days. Sitting at a distance of 0.163 AU from its star—closer than Mercury is to the Sun—Gliese 832 c receives a comparable amount of stellar energy as Earth does from the Sun. However, despite its potential Earth-like characteristics, Gliese 832 c may be too hot to sustain liquid water, making it a less likely candidate for habitability.",
+    "The discovery of Gliese 832 c, led by Dr. Robert Wittenmyer from the University of New South Wales, adds to a planetary system already known to host a cold Jupiter-like planet, Gliese 832 b, discovered in 2009. Together, these planets form a miniature version of our Solar System, with an outer gas giant and an inner rocky planet orbiting a red-dwarf star. Gliese 832 itself, also known as HD 204961 or LHS 3685, has about half the mass and radius of the Sun, classifying it as an M1.5 dwarf star.",
+  ];
+  return new Boss(
+    "Gliese 832 C",
+    "Celestial Sentinel",
+    quizQuestions,
+    information
+  );
 }
 
 export const TOI_1231_B = firstBoss();
