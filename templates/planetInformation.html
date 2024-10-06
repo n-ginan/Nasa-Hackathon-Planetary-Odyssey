@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Planet Information</title>
     <link rel="stylesheet" href="/static/css/planetInfo.css" />
   </head>
   <body>
+    <!-- Preload images for JavaScript manipulation -->
+    <img src="/static/res/TOI-1231_planet.PNG" hidden />
+    <img src="/static/res/Wolf_1061_c_planet.png" hidden />
+    <img src="/static/res/GJ_1002_b_planet.png" hidden />
+    <img src="/static/res/Proxima_Centauri_b_planet.PNG" hidden />
+    <img src="/static/res/Epsilon_Eridani_B_planet.PNG" hidden />
+    <img src="/static/res/Gliese_832_C_planet.PNG" hidden />
+
     <div class="hero">
       <div class="planetDetails">
-        <h1>TOI-1231 b</h1>
-        <p class="paragraph1">
+        <h1 id="planetHeader">TOI-1231 b</h1>
+        <p class="paragraph1" id="firstParagraph">
           90 light years away from Earth, there exists the Neptune-like
           exoplanet, TOI-1231 which was discovered in 2021 through a transit.
           This planet was discovered by a large team of astronomers led by
@@ -25,7 +33,7 @@
           close to its star. This is due to its star being cooler and less
           bright too compared to our other stars like our Sun.
         </p>
-        <p class="paragraph2">
+        <p class="paragraph2" id="secondParagraph">
           Astronomers are speculating that TOI-1231 b comprises of a gaseous
           world with a rich atmosphere. Bringing that into light, astronomers
           allegedly saw evidences of clous being existent in the said planet.
@@ -36,11 +44,16 @@
           identity how common or rare it is for water clouds to form in these
           type of planets.
         </p>
-        <button id="procedeBtn">Procede to Planet</button>
+        <button id="proceedBtn">Procede to Planet</button>
       </div>
       <div class="imageContainer">
-        <img src="/static/res/TOI-1231_planet.PNG" alt="TOI-123-b" />
+        <img
+          id="planetImage"
+          src="/static/res/TOI-1231_planet.PNG"
+          alt="TOI-123-b"
+        />
       </div>
     </div>
+    <script type="module" src="/static/js/planet_information.js"></script>
   </body>
 </html>
