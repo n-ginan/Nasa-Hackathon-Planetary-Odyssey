@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         body: "Traveling between distant exoplanets, navigating star systems long left to myth. But here he is, tasked with venturing to the uncharted reaches of the galaxy, starting with the exoplanets TOI-1231 b, Wolf 1061 c, GJ 1002 b, Proxima Centauri b, Epsilon Eridani B, and Gliese 832 C. Each of these planets holds secrets, challenges, and fragments of the clues necessary to unlock the Sigma Stone’s resting place.",
       });
       // Sets the target URL after the dialog
-      destination = "loading";
+      destination = "planets-selection";
     } else if (url_location === "") {
       dialogueContent.push(
         "As he steps into the Starmapper, the NPC pilot—a grizzled veteran named Captain Ryn—greets him with a wry smile."
