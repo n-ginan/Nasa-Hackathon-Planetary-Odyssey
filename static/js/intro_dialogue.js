@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // IDs to be filled in the future when the html page is working
-  const dialogueHeader = document.getElementById("");
-  const dialogueBody = document.getElementById("");
-  const nextBtn = document.getElementById("");
+  const dialogueHeader = document.getElementById("dialogueHeader");
+  const dialogueBody = document.getElementById("dialogueBody");
+  const nextBtn = document.getElementById("nextBtn");
 
   const dialogueContent = [];
   let dialogueIndex = 0;
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     url_parts = window.location.href.split("/");
     url_location = url_parts[url_parts.length - 1];
     // url location conditionals to be filled in the future when the html pages are ready
-    if (url_location === "") {
+    if (url_location === "intro") {
       dialogueContent.push({
         header: "In the far reaches of the cosmos,",
         body: "where the known universe blurs into the unknown, Neil deGrasse Tyson stands at the helm of an advanced spacecraft, the Starmapper. Once a humble science communicator, he now shoulders the fate of not just Earth, but the entire galaxy. The High Council of Orion’s Gate, knowing his unparalleled knowledge of the cosmos, has entrusted him with a mission unlike any other: to locate the ancient Sigma Stone, buried deep beneath alien worlds. The stone is the last hope to stave off the Voidstorm—a cosmic force that threatens to unravel the fabric of the universe itself.",
@@ -53,4 +53,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // onReady functions
   selectDialogue();
+  loadDialogue();
 });
