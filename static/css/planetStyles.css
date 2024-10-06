@@ -86,7 +86,7 @@ nav p {
     justify-content: center;    
 }
 
-.planetPiContainer {
+.planetPicContainer {
     width: 35vw;
     height: 35vw;
     border: 0.005px solid rgb(236, 167, 167);
@@ -101,28 +101,54 @@ nav p {
     height: auto;
     cursor: pointer;
     user-select: none;
+    transition: transform 0.5s ease;
 }
-.planetInteraction .planetMain{
-    top: 50%;
-    bottom: 50%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:start;
+
+.planetInteraction img:hover {
+    transform: scale(1.1);
 }
 
 .planetName {
-    font-size: 7rem;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
-    font-family: Inter;
-    text-align: center;
-    text-shadow: #3C2065 0 1px 1px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Adjust the vertical position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+    color: white; /* Adjust the text color */
+    font-size: 7rem; /* Adjust font size as needed */
+    text-align:center;
+    white-space: nowrap; 
 }
 
-.planetMain button {
+:root {
+    --name: 'Proxima Centauri b'
+}
+
+.planetName::after,
+ .planetName::before {
+    content: var(--name);
+    top: 0;
+    left: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.planetName::before {
+    animation: glitch 0.3s linear infinite reverse;
+    color: #2196f3;
+    z-index: -2;
+}
+
+
+.planetName::after {
+    animation: glitch 0.3s linear infinite;
+    color: #e91e63;
+    z-index: -1;
+}
+
+
+
+.planetInteraction button {
     padding: 10px 20px;
     border: none;
     background:purple;
@@ -133,7 +159,7 @@ nav p {
     transition: background 0.3s ease;
 }
 
-.planetMain button:hover {
+.planetInteraction button:hover {
     background: #fff;
     color: purple;
 }
@@ -169,6 +195,7 @@ nav p {
     height:15vh;
     cursor: pointer;
     user-select: none;
+    filter: brightness(0.5);
 }
 
 .fa-solid{
@@ -193,4 +220,33 @@ nav p {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+
+@keyframes glitch {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    20% {
+        top: -10px;
+        left: -10px;
+    }
+    40% {
+        top: 10px;
+        left: 10px;
+    }
+    60% {
+        top: -10x;
+        left: 10px;
+    }
+    80% {
+        top: 10px;
+        left: -10px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+
 }

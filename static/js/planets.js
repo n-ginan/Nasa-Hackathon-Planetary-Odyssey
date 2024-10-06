@@ -115,6 +115,7 @@ nextButton.addEventListener('click', function(){
     planetPic.setAttribute("src", planetPictures[currentPlanetIndex]);
     nextPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex + 1]);
     previousPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex -1]);
+    document.documentElement.style.setProperty('--name', '"' +planetNames[currentPlanetIndex] +'"');
     displayDetailsWithDelay();
 });
 
@@ -132,6 +133,7 @@ previousButton.addEventListener('click', function(){
     planetPic.setAttribute("src", planetPictures[currentPlanetIndex]);
     nextPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex + 1]);
     previousPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex -1]);
+    document.documentElement.style.setProperty('--name', '"' +planetNames[currentPlanetIndex] +'"');
     displayDetailsWithDelay();
 }
 );
@@ -155,4 +157,3 @@ function displayDetailsWithDelay() {
         period[0].textContent = planetDetails[currentPlanetIndex].orbitalPeriod;
     }, 500);  // Adjust delay time (2000ms = 2 seconds)
 }
-
