@@ -29,7 +29,7 @@ Neil’s journey will be perilous, but with his vast knowledge of the cosmos and
 
 ### Developers
 
-- [DragunWF](https://github.com/DragunWF) - Full-Stack Developer
+- [DragunWF](https://github.com/DragunWF) - Full Stack Developer
 - [n-ginan](https://github.com/n-ginan) - Front-end Developer
 - [Kreipri](https://github.com/Kreipri) - Front-end Developer & UI/UX Designer
 - [Kourai9](https://github.com/Kourai9) - Front-end Developer

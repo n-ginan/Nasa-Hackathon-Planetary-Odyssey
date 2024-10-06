@@ -23,7 +23,7 @@ class QuizQuestion {
    * @returns {boolean} Whether the answer is correct.
    */
   isAnswerCorrect(userAnswer) {
-    return userAnswer === this.#correctAnswer; // Accessing private variable
+    return userAnswer === this.#correctAnswer;
   }
 
   /**
