@@ -86,7 +86,19 @@ let planetDetails = [
     },
 ]
 
+//planet Pictures
+let planetPic = document.getElementsByClassName("planetPic")[0];
+let previousPlanetPic = document.getElementsByClassName("previousPlanetPic")[0];
+let nextPlanetPic = document.getElementsByClassName("nextPlanetPic")[0];
 
+let planetPictures = [
+    '/static/res/proxima_centauri_b.PNG',
+    '/static/res/planet3.png',
+    '/static/res/planet4.png',
+    '',
+    '',
+    '',
+]
 
 // Buttons functionality
 nextButton.addEventListener('click', function(){
@@ -100,6 +112,9 @@ nextButton.addEventListener('click', function(){
     mass[0].textContent = planetDetails[currentPlanetIndex].planetMass;
     radius[0].textContent = planetDetails[currentPlanetIndex].orbitalRadius;
     period[0].textContent = planetDetails[currentPlanetIndex].orbitalPeriod;
+    planetPic.setAttribute("src", planetPictures[currentPlanetIndex]);
+    nextPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex + 1]);
+    previousPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex -1]);
     displayDetailsWithDelay();
 });
 
@@ -114,6 +129,9 @@ previousButton.addEventListener('click', function(){
     mass[0].textContent = planetDetails[currentPlanetIndex].planetMass;
     radius[0].textContent = planetDetails[currentPlanetIndex].orbitalRadius;
     period[0].textContent = planetDetails[currentPlanetIndex].orbitalPeriod;
+    planetPic.setAttribute("src", planetPictures[currentPlanetIndex]);
+    nextPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex + 1]);
+    previousPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex -1]);
     displayDetailsWithDelay();
 }
 );

@@ -86,14 +86,19 @@ nav p {
     justify-content: center;    
 }
 
-.planetInteraction img {
+.planetPiContainer {
     width: 35vw;
-    height: auto;
-    position: relative;
-    margin-bottom: 10vh;
-    z-index: 0;
-    border: solid 1px #ffff;
+    height: 35vw;
+    border: 0.005px solid rgb(236, 167, 167);
     border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planetInteraction img {
+    width: 30vw;
+    height: auto;
     cursor: pointer;
     user-select: none;
 }
@@ -113,6 +118,7 @@ nav p {
     cursor: pointer;
     user-select: none;
     font-family: Inter;
+    text-align: center;
     text-shadow: #3C2065 0 1px 1px;
 }
 
@@ -131,13 +137,21 @@ nav p {
     background: #fff;
     color: purple;
 }
-.nextPlanet,
+
 .previousPlanet {
     height: 40vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
+}
+
+.nextPlanet{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .nextPlanet h3,
