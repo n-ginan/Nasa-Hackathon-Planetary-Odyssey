@@ -31,8 +31,7 @@ class WebApp:
 
     @app.route("/encountered-boss")
     def encountered_boss():
-        boss_name = request.args.get("boss_name")
-        return render_template("boss.html", boss_name="Default Boss Name" if not boss_name else boss_name)
+        return render_template("boss.html", boss_code=request.args.get("boss_name"))
 
     @app.route("/quiz")
     def quiz():
