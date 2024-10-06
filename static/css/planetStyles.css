@@ -229,20 +229,20 @@ nav p {
         left: 0;
     }
     20% {
-        top: -5x;
-        left: -5px;
+        top: -10px;
+        left: -10px;
     }
     40% {
-        top: 5px;
-        left: 5px;
+        top: 10px;
+        left: 10px;
     }
     60% {
-        top: -5x;
-        left: 5px;
+        top: -10x;
+        left: 10px;
     }
     80% {
-        top: 5px;
-        left: -5px;
+        top: 10px;
+        left: -10px;
     }
     100% {
         top: 0;
