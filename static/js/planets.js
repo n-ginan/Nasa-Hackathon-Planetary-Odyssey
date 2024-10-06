@@ -157,3 +157,5 @@ function displayDetailsWithDelay() {
         period[0].textContent = planetDetails[currentPlanetIndex].orbitalPeriod;
     }, 500);  // Adjust delay time (2000ms = 2 seconds)
 }
+
+const enterButton = document.getElementById("enterButton");
