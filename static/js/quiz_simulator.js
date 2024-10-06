@@ -36,14 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let questionIndex = 0;
-  const questionSideHeader = document.getElementById("questionSideHeaderId");
-  const questionContent = document.getElementById("questionContentId");
+  const questionContent = document.getElementById("questionText");
   const choicesChosen = [];
-  const choices = {
-    A: document.getElementById("choiceAId"),
-    B: document.getElementById("choiceBId"),
-    C: document.getElementById("choiceCId"),
-    D: document.getElementById("choiceDId"),
+  const choicesBtn = {
+    A: document.getElementById("choiceBtnA"),
+    B: document.getElementById("choiceBtnB"),
+    C: document.getElementById("choiceBtnC"),
+    D: document.getElementById("choiceBtnD"),
   };
 
   function setChoices() {
@@ -51,16 +50,18 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     const currentQuestion = questions[questionIndex];
-    let choiceIndex = 0;
     questionContent.innerText = currentQuestion.getQuestion();
-    questionSideHeader.innerText = `Q${questionIndex + 1}`;
-    for (let choice in choices) {
-      choices[choice].innerText = currentQuestion.getChoices()[choiceIndex++];
-      choices[choice].onclick = () => {
+    let choiceIndex = 0;
+    for (let letter in choicesBtn) {
+      document.getElementById(`choice${letter}`).innerText =
+        currentQuestion.getChoices()[choiceIndex++];
+      choicesBtn[letter].addEventListener("click", () => {
+        choicesChosen.push(
+          document.getElementById(`choice${letter}`).innerText
+        );
         questionIndex++;
-        choicesChosen.push(choices[choice].innerText);
         setChoices();
-      };
+      });
     }
   }
 
