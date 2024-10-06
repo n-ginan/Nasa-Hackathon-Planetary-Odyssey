@@ -5,11 +5,13 @@ class Boss {
    * @param {string} codeName
    * @param {string} name
    * @param {QuizQuestion[]} questions - Array of QuizQuestion objects.
+   * @param {string[]} information
    */
-  constructor(codeName, name, questions) {
+  constructor(codeName, name, questions, information) {
     this.#codeName = codeName;
     this.#name = name;
     this.#questions = questions;
+    this.#information = information;
 
     this.#correctAnswers = [];
     for (let question of this.#questions) {
@@ -21,6 +23,7 @@ class Boss {
   #codeName;
   #name;
   #questions;
+  #information;
   #correctAnswers;
 
   /**
@@ -44,8 +47,18 @@ class Boss {
     return this.#questions;
   }
 
+  /**
+   * @returns {string[]} The array of questions.
+   */
   getCorrectAnswers() {
     return this.#correctAnswers;
+  }
+
+  /**
+   * @returns {string[]} One paragraph per element
+   */
+  getInformation() {
+    return this.#information;
   }
 }
 
