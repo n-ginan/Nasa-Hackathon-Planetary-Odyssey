@@ -46,7 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function setChoices() {
-    if (questionIndex >= questions.length) {
+    if (questionIndex > questions.length) {
+      window.location.href = `/boss-transition?boss_code=${bossCode}&transition_type=defeat`;
       return;
     }
     const currentQuestion = questions[questionIndex];

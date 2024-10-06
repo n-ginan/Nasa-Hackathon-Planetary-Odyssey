@@ -12,8 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const bossCode = document.getElementById("bossCode").innerText;
   const isEncounter =
     document.getElementById("transitionType").innerText === "encounter";
-  let nextBossCode = ""; // TODO: Implement next boss encounters
+  let nextBossCode = null; // TODO: Implement next boss encounters
   let bossName = null;
+  let isLastBoss = false;
 
   function setPageTitle() {
     document.title = isEncounter ? "Encountered Boss!" : "Boss Defeated!";
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       break;
     case "EPSILON_ERIDANI_B":
       bossName = EPSILON_ERIDANI_B.getName();
+      isLastBoss = true;
       // nextBossCode = "GLIESE_832_C"; Note: Project is limited to 5 bosses so the 6th boss might not get used
       break;
     case "GLIESE_832_C":
@@ -57,7 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = `/quiz?boss_code=${bossCode}`;
     } else {
       // URL request recursion
-      window.location.href = `/boss-transition?boss_code=${bossCode}&transition_type=encounter`;
+      if (!isLastBoss) {
+        window.location.href = `/boss-transition?boss_code=${nextBossCode}&transition_type=encounter`;
+      } else {
+        window.location.href = "/";
+      }
     }
   }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
 
