@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Destination components
   const destinations = [
-    "/planet-1",
+    "/loading",
     bossTransition("L_98_59_D"),
     bossTransition("GJ_1002_B"),
     bossTransition("PROXIMA_CENTAURI_B"),
