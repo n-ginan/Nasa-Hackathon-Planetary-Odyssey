@@ -49,13 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
     : "Yipee! You defeated";
 
   // Load to the corresonding quiz content (If meet type is encounter boss)
-  if (isEncounter) {
-    setTimeout(() => {
+  setTimeout(() => {
+    if (isEncounter) {
       window.location.href = `/quiz?boss_code=${bossCode}`;
-    }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
-  } else {
-    setTimeout(() => {
+    } else {
       window.location.href = `/boss_transition?boss_code=${bossCode}&boss_transition=encounter`;
-    }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
-  }
+    }
+  }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
 });
