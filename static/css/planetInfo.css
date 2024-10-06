@@ -31,6 +31,21 @@
     text-align: justify;
 }
 
+.planetDetails button {
+    margin-top: 150px;
+    justify-self: end;
+    background-color: #3C2065;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.planetDetails button:hover {
+    background-color: #5e3594;
+}
 
 .imageContainer{
     width: 50vw;
