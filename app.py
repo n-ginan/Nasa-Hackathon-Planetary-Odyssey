@@ -17,7 +17,7 @@ class WebApp:
     def intro():
         return render_template("intro.html")
 
-    @app.route("/planet-1")
+    @app.route("/proxima")
     def proxima():
         return render_template("planet1.html")
 
