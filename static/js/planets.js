@@ -11,12 +11,12 @@ let nextPlanetName = document.getElementsByClassName('nextPlanetName');
 
 
 let planetNames =[
-    'Proxima Centauri b',
+    'TOI-1231 b',
     'wolf 1061 c',
     'GJ 1002 b',
     'Epsilon eridani b',
     'Gliese 832 c',
-    'TOI-1231 b',
+    'Proxima Centauri b'
 ]
 
 let currentPlanetIndex = 0;
@@ -31,13 +31,13 @@ let period = document.getElementsByClassName('orbitalPeriod');
 
 let planetDetails = [
     {
-        planetName:'Proxima Centauri b',
-        planetDistance:'4 lightyears away from earth',
-        yearDiscovered:'2016',
-        planetType:'Super Earth',
-        planetMass:'1.07 Earths',
-        orbitalRadius:'0.04856 AU',
-        orbitalPeriod:'11.2 days',
+        planetName:'TOI-1231 b',
+        planetDistance:'90 lightyears away from Earth',
+        yearDiscovered:'2021',
+        planetType:'Neptune-like',
+        planetMass:'15.4 Earths',
+        orbitalRadius:'0.1288 AU',
+        orbitalPeriod:'24.2 days',
     },
     {
         planetName:'wolf 1061 c',
@@ -76,13 +76,13 @@ let planetDetails = [
         orbitalPeriod:'35.86 days',
     },
     {
-        planetName:'TOI-1231 b',
-        planetDistance:'90 lightyears away from Earth',
-        yearDiscovered:'2021',
-        planetType:'Neptune-like',
-        planetMass:'15.4 Earths',
-        orbitalRadius:'0.1288 AU',
-        orbitalPeriod:'24.2 days',
+        planetName:'Proxima Centauri b',
+        planetDistance:'4 lightyears away from earth',
+        yearDiscovered:'2016',
+        planetType:'Super Earth',
+        planetMass:'1.07 Earths',
+        orbitalRadius:'0.04856 AU',
+        orbitalPeriod:'11.2 days',
     },
 ]
 
@@ -92,12 +92,12 @@ let previousPlanetPic = document.getElementsByClassName("previousPlanetPic")[0];
 let nextPlanetPic = document.getElementsByClassName("nextPlanetPic")[0];
 
 let planetPictures = [
-    '/static/res/proxima_centauri_b.PNG',
+    '/static/res/TOI-1231b.png',
     '/static/res/wolf_1061_c.png',
     '/static/res/GJ_1002_b.png',
     '/static/res/Epsilon_eridani_b.png',
     '/static/res/gliese_832_c.png',
-    '/static/res/TOI-1231b.png',
+    '/static/res/Proxima_Centauri_b.png',
 ]
 
 // Buttons functionality
