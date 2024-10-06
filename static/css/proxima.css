@@ -3,7 +3,7 @@ body{
     background-image: url(../res/space.jpg); 
     background-size: cover; 
     align-items: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #rock{
@@ -13,4 +13,26 @@ body{
     position: absolute; 
     left: 0; 
     right: 0;
+}
+
+.objectA {
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    background-color: #d3d3d3; /* Light gray placeholder color */
+    width: 200px; /* Adjust the width to your needs */
+    height: 250px; /* Adjust the height to your needs */
+    border: 1px solid #999; /* Optional: Add a border for visibility */
+    display: block; /* Ensures it behaves like a block element */
+}
+
+.objectB {
+    top: 35%;
+    left: 60%;
+    position: absolute;
+    background-color: #d3d3d3; /* Light gray placeholder color */
+    width: 200px; /* Adjust the width to your needs */
+    height: 250px; /* Adjust the height to your needs */
+    border: 1px solid #999; /* Optional: Add a border for visibility */
+    display: block; /* Ensures it behaves like a block element */
 }
