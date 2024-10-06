@@ -1,11 +1,39 @@
-import { TOI_1231_B } from "./quiz_data.js";
+import {
+  TOI_1231_B,
+  L_98_59_D,
+  GJ_1002_B,
+  PROXIMA_CENTAURI_B,
+  EPSILON_ERIDANI_B,
+  GLIESE_832_C,
+} from "./quiz_data.js";
 import QuizQuestion from "./quiz_question.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  const bossCode = document.getElementById("bossCode").innerText;
   /**
    * @type {QuizQuestion[]}
    */
-  const questions = TOI_1234_B.getQuestions();
+  let questions = null;
+  switch (bossCode) {
+    case "TOI_1234_B":
+      questions = TOI_1234_B.getQuestions();
+      break;
+    case "L_98_59_D":
+      questions = L_98_59_D.getQuestions();
+      break;
+    case "GJ_1002_B":
+      questions = GJ_1002_B.getQuestions();
+      break;
+    case "PROXIMA_CENTAURI_B":
+      questions = PROXIMA_CENTAURI_B.getQuestions();
+      break;
+    case "EPSILON_ERIDANI_B":
+      questions = EPSILON_ERIDANI_B.getQuestions();
+      break;
+    case "GLIESE_832_C":
+      questions = GLIESE_832_C.getQuestions();
+      break;
+  }
   let questionIndex = 0;
 
   // IDs to be filled in the future when the html page is ready
