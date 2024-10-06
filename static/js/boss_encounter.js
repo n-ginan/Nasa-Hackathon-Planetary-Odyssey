@@ -14,9 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("transitionType").innerText === "encounter";
   let nextBoss = ""; // TODO: Implement next boss encounters
   let bossName = null;
+  console.log(bossCode, "TOI_1231_B", bossCode === "TOI_1231_B");
 
   switch (bossCode) {
-    case "TOI_1234_B":
+    case "TOI_1231_B":
       bossName = TOI_1231_B.getName();
       break;
     case "L_98_59_D":

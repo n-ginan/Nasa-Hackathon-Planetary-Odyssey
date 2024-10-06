@@ -31,7 +31,7 @@ class WebApp:
 
     @app.route("/boss-transition")
     def boss_transition():
-        return render_template("boss.html", boss_code=request.args.get("boss_name"),
+        return render_template("boss_transition.html", boss_code=request.args.get("boss_code"),
                                transition_type=request.args.get("transition_type"))
 
     @app.route("/quiz")
