@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("nextBtn");
 
   const dialogueContent = [];
+  let destination = null;
   let dialogueIndex = 0;
 
   function selectDialogue() {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         header: "Neil had never imagined this would be his life.",
         body: "Traveling between distant exoplanets, navigating star systems long left to myth. But here he is, tasked with venturing to the uncharted reaches of the galaxy, starting with the exoplanets TOI-1231 b, Wolf 1061 c, GJ 1002 b, Proxima Centauri b, Epsilon Eridani B, and Gliese 832 C. Each of these planets holds secrets, challenges, and fragments of the clues necessary to unlock the Sigma Stone’s resting place.",
       });
+      destination = "proxima";
     } else if (url_location === "") {
       dialogueContent.push(
         "As he steps into the Starmapper, the NPC pilot—a grizzled veteran named Captain Ryn—greets him with a wry smile."
@@ -44,8 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   nextBtn.addEventListener("click", () => {
     dialogueIndex++;
     if (dialogueIndex >= dialogueContent.length) {
-      // To be filled when the html page is ready
-      // window.location.href = "/"
+      window.location.href = `/${destination}`;
     } else {
       loadDialogue();
     }
