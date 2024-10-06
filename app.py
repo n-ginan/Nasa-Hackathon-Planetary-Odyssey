@@ -25,6 +25,10 @@ class WebApp:
     def planets():
         return render_template("planetsSelection.html")
 
+    @app.route("/planet-information")
+    def planet_information():
+        return render_template("planetInformation.html", boss_code=request.args.get("boss_code"))
+
     @app.route("/boss-transition")
     def boss_transition():
         return render_template("boss_transition.html", boss_code=request.args.get("boss_code"),
