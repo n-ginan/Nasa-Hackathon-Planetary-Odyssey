@@ -93,11 +93,11 @@ let nextPlanetPic = document.getElementsByClassName("nextPlanetPic")[0];
 
 let planetPictures = [
     '/static/res/proxima_centauri_b.PNG',
-    '/static/res/planet3.png',
-    '/static/res/planet4.png',
-    '',
-    '',
-    '',
+    '/static/res/wolf_1061_c.png',
+    '/static/res/GJ_1002_b.png',
+    '/static/res/Epsilon_eridani_b.png',
+    '/static/res/gliese_832_c.png',
+    '/static/res/TOI-1231b.png',
 ]
 
 // Buttons functionality
@@ -113,8 +113,8 @@ nextButton.addEventListener('click', function(){
     radius[0].textContent = planetDetails[currentPlanetIndex].orbitalRadius;
     period[0].textContent = planetDetails[currentPlanetIndex].orbitalPeriod;
     planetPic.setAttribute("src", planetPictures[currentPlanetIndex]);
-    nextPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex + 1]);
-    previousPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex -1]);
+    nextPlanetPic.setAttribute("src", planetPictures[(currentPlanetIndex + 1 + planetNames.length) % planetNames.length]);
+    previousPlanetPic.setAttribute("src", planetPictures[(currentPlanetIndex - 1 + planetNames.length) % planetNames.length]);
     document.documentElement.style.setProperty('--name', '"' +planetNames[currentPlanetIndex] +'"');
     displayDetailsWithDelay();
 });
@@ -131,8 +131,8 @@ previousButton.addEventListener('click', function(){
     radius[0].textContent = planetDetails[currentPlanetIndex].orbitalRadius;
     period[0].textContent = planetDetails[currentPlanetIndex].orbitalPeriod;
     planetPic.setAttribute("src", planetPictures[currentPlanetIndex]);
-    nextPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex + 1]);
-    previousPlanetPic.setAttribute("src", planetPictures[currentPlanetIndex -1]);
+    nextPlanetPic.setAttribute("src", planetPictures[(currentPlanetIndex + 1 + planetNames.length) % planetNames.length]);
+    previousPlanetPic.setAttribute("src", planetPictures[(currentPlanetIndex - 1 + planetNames.length) % planetNames.length]);
     document.documentElement.style.setProperty('--name', '"' +planetNames[currentPlanetIndex] +'"');
     displayDetailsWithDelay();
 }
