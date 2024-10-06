@@ -21,13 +21,9 @@ class WebApp:
     def proxima():
         return render_template("proxima.html")
 
-    @app.route("/planets")
+    @app.route("/planets-selection")
     def planets():
-        return render_template("planets.html")
-
-    @app.route("/planets-1")
-    def planets_1():
-        return render_template("planets1.html")
+        return render_template("planetsSelection.html")
 
     @app.route("/boss-transition")
     def boss_transition():
