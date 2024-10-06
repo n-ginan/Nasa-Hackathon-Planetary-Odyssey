@@ -10,7 +10,9 @@ import {
 document.addEventListener("DOMContentLoaded", () => {
   const SECONDS_BEFORE_QUIZ_LOAD = 3;
   const bossCode = document.getElementById("bossCode").innerText;
-  const bossNameElement = document.getElementById("bossName");
+  const isEncounter =
+    document.getElementById("bossMeetType").innerText === "encounter";
+  let nextBoss = ""; // TODO: Implement next boss encounters
   let bossName = null;
 
   switch (bossCode) {
@@ -34,8 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
       break;
   }
 
-  bossNameElement.innerText = bossName;
-  setTimeout(() => {
-    window.location.href = `/quiz?boss_code=${bossCode}`;
-  }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
+  // Set page content
+  document.getElementById("bossName").innerText = bossName;
+  document.getElementById("bossHeader").innerText = isEncounter
+    ? "You encountered"
+    : "Yipee! You defeated";
+
+  // Load to the corresonding quiz content (If meet type is encounter boss)
+  if (isEncounter) {
+    setTimeout(() => {
+      window.location.href = `/quiz?boss_code=${bossCode}`;
+    }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
+  } else {
+    // TODO: If defeat then load to next boss
+  }
 });
