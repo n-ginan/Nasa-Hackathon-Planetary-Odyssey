@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/planetStyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/planetStyles.css" />
 
-    <link rel="stylesheet" href="/static/css/common.css">
-
-</head>
-<body>
-   <div class="main">
-        <nav>
-            <h2 class="logo headingSmall">space<span>Rock</span></h2>
-            <p class="system">System Version: 4.10</p>
-            <script src="https://kit.fontawesome.com/5c023126d9.js" crossorigin="anonymous"></script>
-        </nav>
-        <div class="mainContent">
-            <div class="leftSide"> 
-
-                
-                <div class="planetDetails">
-                    <h3>DISTANCE</h3>
-                    <p class="distance">16 lightyears away from Earth</p>
-                    <h3>YEAR DISCOVERED</h3>
-                    <p class="yearDiscovered">2022</p>
-                    <h3>Planet Type</h3>
-                    <p class="planetType">Super Earth</p>
-                </div>
-                <div class="previousPlanet">
-                    <i class="fa-solid fa-less-than"></i>
-                    <img src="/static/res/TOI-1231b.PNG" alt="" class="previousPlanetPic">
-                    <h3 class="previousPlanetName">TOI-1231 b</h3>
-                </div>
-            </div>
-
-
-            <div class="planetInteraction">
-                <div class="planetPicContainer">
-                    <img src="/static/res/Proxima_Centauri_b.PNG" alt="" class="planetPic">
-                </div>
-                <h1 class="planetName">Proxima Centauri b</h1>
-                <button id="enterButton">ENTER PLANET</button>
-            </div>
-
-
-            <div class="rightSide">
-                <div class="planetDetails2">
-                    <h3>PLANET MASS</h3>
-                    <p class="planetMass">1.03 x Earth (estimate)</p>
-                    <h3>ORBITAL RADIUS</h3>
-                    <p class="orbitalRadius">0.0457. AU</p>
-                    <h3>ORBITAL PERIOD</h3>
-                    <p class="orbitalPeriod">10.3 days</p>
-                </div>
-                <div class="nextPlanet">
-                    <h3 class="nextPlanetName">Wolf 10061 c</h3>
-                    <img src="/static/res/Wolf_1061_c.png" alt="" class="nextPlanetPic">
-                    <i class="fa-solid fa-greater-than"></i>
-                </div>
-            </div>
-
-
+    <link rel="stylesheet" href="/static/css/common.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h2 class="logo headingSmall">space<span>Rock</span></h2>
+        <p class="system">System Version: 4.10</p>
+        <script
+          src="https://kit.fontawesome.com/5c023126d9.js"
+          crossorigin="anonymous"
+        ></script>
+      </nav>
+      <div class="mainContent">
+        <div class="leftSide">
+          <div class="planetDetails">
+            <h3>DISTANCE</h3>
+            <p class="distance">16 lightyears away from Earth</p>
+            <h3>YEAR DISCOVERED</h3>
+            <p class="yearDiscovered">2022</p>
+            <h3>Planet Type</h3>
+            <p class="planetType">Super Earth</p>
+          </div>
+          <div class="previousPlanet">
+            <i class="fa-solid fa-less-than"></i>
+            <img
+              src="/static/res/TOI-1231b.PNG"
+              alt=""
+              class="previousPlanetPic"
+            />
+            <h3 class="previousPlanetName">TOI-1231 b</h3>
+          </div>
         </div>
-   </div>
-   <script src="/static/js/planets.js"></script>
-</body>
+
+        <div class="planetInteraction">
+          <div class="planetPicContainer">
+            <img
+              src="/static/res/Proxima_Centauri_b.PNG"
+              alt=""
+              class="planetPic"
+            />
+          </div>
+          <h1 class="planetName">Proxima Centauri b</h1>
+          <button id="enterButton">ENTER PLANET</button>
+        </div>
+
+        <div class="rightSide">
+          <div class="planetDetails2">
+            <h3>PLANET MASS</h3>
+            <p class="planetMass">1.03 x Earth (estimate)</p>
+            <h3>ORBITAL RADIUS</h3>
+            <p class="orbitalRadius">0.0457. AU</p>
+            <h3>ORBITAL PERIOD</h3>
+            <p class="orbitalPeriod">10.3 days</p>
+          </div>
+          <div class="nextPlanet">
+            <h3 class="nextPlanetName">Wolf 10061 c</h3>
+            <img
+              src="/static/res/Wolf_1061_c.png"
+              alt=""
+              class="nextPlanetPic"
+            />
+            <i class="fa-solid fa-greater-than"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/planets.js"></script>
+  </body>
 </html>
