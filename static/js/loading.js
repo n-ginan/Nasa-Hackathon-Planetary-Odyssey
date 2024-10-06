@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const SECONDS = 5;
 
   setTimeout(() => {
-    window.location.href = "/proxima";
+    window.location.href = "/planets-selection";
   }, SECONDS * 1000);
 });
