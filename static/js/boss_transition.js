@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("transitionType").innerText === "encounter";
   let nextBossCode = ""; // TODO: Implement next boss encounters
   let bossName = null;
-  console.log(bossCode, "TOI_1231_B", bossCode === "TOI_1231_B");
+
+  function setPageTitle() {
+    document.title = isEncounter ? "Encountered Boss!" : "Boss Defeated!";
+  }
 
   switch (bossCode) {
     case "TOI_1231_B":
@@ -54,7 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = `/quiz?boss_code=${bossCode}`;
     } else {
       // URL request recursion
-      window.location.href = `/boss_transition?boss_code=${bossCode}&boss_transition=encounter`;
+      window.location.href = `/boss-transition?boss_code=${bossCode}&transition_type=encounter`;
     }
   }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
+
+  // onReady functions
+  setPageTitle();
 });
