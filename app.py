@@ -29,15 +29,14 @@ class WebApp:
     def planets_1():
         return render_template("planets1.html")
 
-    @app.route("/encountered-boss")
-    def encountered_boss():
-        boss_name = request.args.get("boss_name")
-        return render_template("boss.html", boss_name="Default Boss Name" if not boss_name else boss_name)
+    @app.route("/boss-transition")
+    def boss_transition():
+        return render_template("boss_transition.html", boss_code=request.args.get("boss_code"),
+                               transition_type=request.args.get("transition_type"))
 
-    @app.route("/defeated-boss", methods=["POST"])
-    def defeated_boss():
-        # HTML file not created yet
-        return render_template("", boss_name=request.form.get("boss_name"))
+    @app.route("/quiz")
+    def quiz():
+        return render_template("quiz.html", boss_code=request.args.get("boss_code"))
 
     def start():
         # Logging Configuration
