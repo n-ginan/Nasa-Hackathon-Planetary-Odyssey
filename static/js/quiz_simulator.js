@@ -9,35 +9,43 @@ import {
 import QuizQuestion from "./quiz_question.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Boss Components
   const bossCode = document.getElementById("bossCode").innerText;
   /**
    * @type {QuizQuestion[]}
    */
   let questions = null;
+  let correctAnswers = null;
   switch (bossCode) {
     case "TOI_1231_B":
       questions = TOI_1231_B.getQuestions();
+      correctAnswers = TOI_1231_B.getCorrectAnswers();
       break;
     case "L_98_59_D":
       questions = L_98_59_D.getQuestions();
+      correctAnswers = L_98_59_D.getCorrectAnswers();
       break;
     case "GJ_1002_B":
       questions = GJ_1002_B.getQuestions();
+      correctAnswers = GJ_1002_B.getCorrectAnswers();
       break;
     case "PROXIMA_CENTAURI_B":
       questions = PROXIMA_CENTAURI_B.getQuestions();
+      correctAnswers = PROXIMA_CENTAURI_B.getCorrectAnswers();
       break;
     case "EPSILON_ERIDANI_B":
       questions = EPSILON_ERIDANI_B.getQuestions();
+      correctAnswers = EPSILON_ERIDANI_B.getCorrectAnswers();
       break;
     case "GLIESE_832_C":
       questions = GLIESE_832_C.getQuestions();
+      correctAnswers = GLIESE_832_C.getCorrectAnswers();
       break;
   }
 
+  // Question and choice components
   let questionIndex = 0;
   const questionContent = document.getElementById("questionText");
-  const choicesChosen = [];
   const choicesBtn = {
     A: document.getElementById("choiceBtnA"),
     B: document.getElementById("choiceBtnB"),
@@ -45,6 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
     D: document.getElementById("choiceBtnD"),
   };
 
+  // Player health components
+  let playerHeartCount = 3;
+  const hearts = {
+    1: document.getElementById("heart1"),
+    2: document.getElementById("heart2"),
+    3: document.getElementById("heart3"),
+  };
+
+  // Utility functions
   function setChoices() {
     if (questionIndex > questions.length) {
       window.location.href = `/boss-transition?boss_code=${bossCode}&transition_type=defeat`;
@@ -57,11 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById(`choice${letter}`).innerText =
         currentQuestion.getChoices()[choiceIndex++];
       choicesBtn[letter].addEventListener("click", () => {
-        choicesChosen.push(
-          document.getElementById(`choice${letter}`).innerText
-        );
-        questionIndex++;
-        setChoices();
+        if (letter === correctAnswers[questionIndex]) {
+          questionIndex++;
+          setChoices();
+        } else {
+          alert("Wrong answer, you have lost one heart!");
+          damagePlayer();
+        }
       });
     }
   }
@@ -75,6 +94,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
     return count;
+  }
+
+  function damagePlayer() {
+    hearts[playerHeartCount--].setAttribute("src", ""); // Set path to broken heart
+    if (playerHeartCount <= 0) {
+      alert("You have lost all your hearts!");
+      window.location.href = `/boss-transition?boss_code${bossCode}&transition_type=encounter`;
+    }
   }
 
   // onReady functions
