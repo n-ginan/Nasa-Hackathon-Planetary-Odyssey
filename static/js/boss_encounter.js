@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const SECONDS_BEFORE_QUIZ_LOAD = 3;
   const bossCode = document.getElementById("bossCode").innerText;
   const isEncounter =
-    document.getElementById("bossMeetType").innerText === "encounter";
+    document.getElementById("transitionType").innerText === "encounter";
   let nextBoss = ""; // TODO: Implement next boss encounters
   let bossName = null;
 
