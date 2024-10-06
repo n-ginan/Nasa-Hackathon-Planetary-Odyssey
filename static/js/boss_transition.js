@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
       break;
     case "EPSILON_ERIDANI_B":
       bossName = EPSILON_ERIDANI_B.getName();
-      isLastBoss = true;
-      // nextBossCode = "GLIESE_832_C"; Note: Project is limited to 5 bosses so the 6th boss might not get used
+      nextBossCode = "GLIESE_832_C";
       break;
     case "GLIESE_832_C":
       bossName = GLIESE_832_C.getName();
+      isLastBoss = true;
       break;
   }
 
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isLastBoss) {
         window.location.href = `/boss-transition?boss_code=${nextBossCode}&transition_type=encounter`;
       } else {
-        window.location.href = "/";
+        window.location.href = "/planets-selection";
       }
     }
   }, SECONDS_BEFORE_QUIZ_LOAD * 1000);

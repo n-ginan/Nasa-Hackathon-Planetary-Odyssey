@@ -3,132 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,567&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../static/css/intro.css"/>
+    <link rel="stylesheet" href="../static/css/common.css"/>
+    <title>Nasa Hackathon</title>
   </head>
   <body>
-    <div
-      style="width: 100%; height: 100%; position: relative; background: white"
-    >
-      <img
-        style="
-          width: 1920px;
-          height: 1259px;
-          left: 0px;
-          top: -39px;
+      <img style="object-fit: cover; width: 100%; bottom: -20%; position: absolute; left: 0; right: 0;" src="../static/res/niel_intro.PNG"/>
+      <div class="gradient"></div>
+      <!-- dialog box -->
+      <div style="
+          width: 95%;
+          bottom: 25%;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
           position: absolute;
-        "
-        src="../static/res/niel_intro.PNG"
-      />
-      <img
-        style="
-          width: 827px;
-          height: 575px;
-          left: 295px;
-          top: 650px;
-          position: absolute;
-          opacity: 0;
-        "
-        src="https://via.placeholder.com/827x575"
-      />
-      <img
-        style="
-          width: 100%;
-          height: 100%;
-          left: -6px;
-          top: -20px;
-          position: absolute;
-        "
-        src="../static/res/niel_intro.PNG"
-      />
-      <div
-        style="
-          width: 1958px;
-          height: 419px;
-          left: 0px;
-          top: 661px;
-          position: absolute;
-          opacity: 0.72;
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 88%);
-        "
-      ></div>
-      <div
-        style="
-          width: 1798px;
-          height: 391px;
-          left: 61px;
-          top: 714px;
-          position: absolute;
-        "
-      >
-        <div
+          align-items: center;
+          align-content: center;
+      ">
+        <!-- <div
           style="
-            width: 1798px;
-            height: 391px;
-            left: 0px;
-            top: 0px;
+            width: 80%;
+            height: 60%;
+            left: 0;
+            right: 0;
+            bottom: 50%;
             position: absolute;
             opacity: 0.66;
             background: black;
             box-shadow: 9px 10px 5.900000095367432px 1px rgba(0, 0, 0, 0.56);
             border-radius: 25px;
-          "
-        ></div>
-        <img
+          ">
+        </div> -->
+        <!-- white outline -->
+        <!-- <div
           style="
-            width: 1798px;
-            height: 391px;
-            left: 0px;
-            top: 0px;
-            position: absolute;
-            opacity: 0.66;
-            border-radius: 25px;
-          "
-          src="https://via.placeholder.com/1798x391"
-        />
-        <div
-          style="
-            width: 1773px;
-            height: 373px;
-            left: 13px;
-            top: 9px;
+            width: 79%;
+            height: 55%;
+            margin: 0.4%;
+            left: 0%;
+            right: 0%;
+            bottom: 52%;
             position: absolute;
             opacity: 0.53;
             box-shadow: 9px 10px 5.900000095367432px 1px rgba(0, 0, 0, 0.56);
             border-radius: 25px;
             border: 1px white solid;
           "
-        ></div>
-      </div>
-      <div
+        >  -->
+        <div
         style="
-          width: 1320px;
-          height: 279px;
-          left: 300px;
-          top: 729px;
           position: absolute;
+          align-content: center;
+          background-color: rgba(0, 0, 0, 0.56);
+          padding: 2.4%;
+          border-radius: 25px;
           text-align: justify;
-        "
-      >
-        <span
-          style="
-            color: white;
-            font-size: 48px;
-            font-family: Inter;
-            font-weight: 700;
-            line-height: 57.6px;
-            word-wrap: break-word;
-          "
-          id="dialogueHeader"
-          >Neil had never imagined this would be his life.</span
-        ><br /><span
-          style="
-            color: white;
-            font-size: 24px;
-            font-family: Inter;
-            font-weight: 400;
-            line-height: 33.6px;
-            word-wrap: break-word;
-          "
+        ">
+            <!-- <div
+            style="
+              width: 80%;
+              height: 60%;
+              left: 0;
+              right: 0;
+              bottom: 50%;
+              position: absolute;
+              opacity: 0.03;
+              border-radius: 25px;
+              background-image: url(../static/res/tile.png);
+              background-size: 2%;
+              background-repeat: repeat;
+            ">
+            </div> -->
+          <span
+          class="headingDialogue"
+          id="dialogueHeader">
+            Neil had never imagined this would be his life.
+          </span><br />
+          <span class="bodyDialogue" style=" "
           id="dialogueBody"
           >Traveling between distant exoplanets, navigating star systems long
           left to myth. But here he is, tasked with venturing to the uncharted
@@ -136,31 +96,29 @@
           1061 c, GJ 1002 b, Proxima Centauri b, Epsilon Eridani B, and Gliese
           832 C. Each of these planets holds secrets, challenges, and fragments
           of the clues necessary to unlock the Sigma Stone’s resting
-          place.</span
-        >
-      </div>
-      <div
-        style="
-          width: 149.99px;
-          height: 129.18px;
-          left: 1709.02px;
-          top: 910px;
-          position: absolute;
-        "
-      >
-        <div
+          place.</span>
+          <div
           style="
-            width: 37.5px;
-            height: 64.59px;
-            left: 56.24px;
-            top: 32.3px;
+            width: 20%;
+            height: 20%;
             position: absolute;
-            border: 4px white solid;
-          "
-          id="nextBtn"
-        ></div>
+            right: 0%;
+          ">
+          <div
+            style="
+              width: 10%;
+              height: 16%;
+              right: 15%;
+              position: absolute;
+              border: 4px white solid;
+            "
+            id="nextBtn"
+          ></div>
+        </div>
+        </div>
+        
       </div>
-    </div>
+      
     <script src="/static/js/intro_dialogue.js"></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+
+body{
+    background-image: url(../res/space.jpg); 
+    background-size: cover; 
+    align-items: center;
+    overflow: hidden;
+}
+
+#rock{
+    object-fit: cover;
+    width: 100%;
+    bottom: -10%;
+    position: absolute; 
+    left: 0; 
+    right: 0;
+}
+
+.objectA {
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    width:12%;
+    size: 10%;
+    display: block; /* Ensures it behaves like a block element */
+}
+
+.objectB {
+    top: 35%;
+    left: 60%;
+    position: absolute;
+    width: 12%;
+    display: block; /* Ensures it behaves like a block element */
+}
