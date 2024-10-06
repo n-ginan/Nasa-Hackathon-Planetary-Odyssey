@@ -29,9 +29,10 @@ class WebApp:
     def planets_1():
         return render_template("planets1.html")
 
-    @app.route("encounted-boss")
+    @app.route("/encountered-boss")
     def encountered_boss():
-        return render_template("boss.html", boss_name=request.args.get("boss"))
+        boss_name = request.args.get("boss_name")
+        return render_template("boss.html", boss_name="Default Boss Name" if not boss_name else boss_name)
 
     @app.route("/defeated-boss", methods=["POST"])
     def defeated_boss():
