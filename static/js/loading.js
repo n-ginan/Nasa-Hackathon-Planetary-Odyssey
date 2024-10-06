@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const SECONDS = 5;
 
   setTimeout(() => {
-    window.location.href = "/planets-selection";
+    window.location.href = "/planet-1";
   }, SECONDS * 1000);
 });
