@@ -1,4 +1,4 @@
-document.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Deals with randomized space facts
   const spaceFactsContent = [
     "The Moon is lemon-shaped. Even if it looks round in the sky, the moon contains flattened poles and bulges on both near and far side around its equator.",

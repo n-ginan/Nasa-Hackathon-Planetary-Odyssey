@@ -5,6 +5,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     window.location.href = "/proxima";
   }, SECONDS * 1000);
-
-
 });
