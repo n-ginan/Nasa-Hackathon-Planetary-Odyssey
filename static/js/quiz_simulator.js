@@ -34,17 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
       questions = GLIESE_832_C.getQuestions();
       break;
   }
-  let questionIndex = 0;
 
-  // IDs to be filled in the future when the html page is ready
-  const questionSideHeader = document.getElementById("");
-  const questionContent = document.getElementById("");
+  let questionIndex = 0;
+  const questionSideHeader = document.getElementById("questionSideHeaderId");
+  const questionContent = document.getElementById("questionContentId");
   const choicesChosen = [];
   const choices = {
-    A: document.getElementById(""),
-    B: document.getElementById(""),
-    C: document.getElementById(""),
-    D: document.getElementById(""),
+    A: document.getElementById("choiceAId"),
+    B: document.getElementById("choiceBId"),
+    C: document.getElementById("choiceCId"),
+    D: document.getElementById("choiceDId"),
   };
 
   function setChoices() {
@@ -57,16 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
     questionSideHeader.innerText = `Q${questionIndex + 1}`;
     for (let choice in choices) {
       choices[choice].innerText = currentQuestion.getChoices()[choiceIndex++];
-      choices[choice].addEventListener("click", () => {
+      choices[choice].onclick = () => {
         questionIndex++;
         choicesChosen.push(choices[choice].innerText);
         setChoices();
-      });
+      };
     }
   }
 
   function countCorrectAnswers() {
-    const correctAnswers = TOI_1234_B.getCorrectAnswers();
+    const correctAnswers = TOI_1231_B.getCorrectAnswers(); // Fixed name
     let count = 0;
     for (let i = 0; i < choicesChosen.length; i++) {
       if (correctAnswers[i] === choicesChosen[i]) {
@@ -77,5 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // onReady functions
-  setChoices();
+  if (questions && questions.length > 0) {
+    setChoices();
+  } else {
+    console.error("No questions available for this boss code.");
+  }
 });
