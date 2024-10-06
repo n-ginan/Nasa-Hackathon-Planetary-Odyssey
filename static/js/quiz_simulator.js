@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let questions = null;
   switch (bossCode) {
     case "TOI_1234_B":
-      questions = TOI_1234_B.getQuestions();
+      questions = TOI_1231_B.getQuestions();
       break;
     case "L_98_59_D":
       questions = L_98_59_D.getQuestions();
