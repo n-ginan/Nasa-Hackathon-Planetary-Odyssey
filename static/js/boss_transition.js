@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isEncounter) {
       window.location.href = `/quiz?boss_code=${bossCode}`;
     } else {
+      // URL request recursion
       window.location.href = `/boss_transition?boss_code=${bossCode}&boss_transition=encounter`;
     }
   }, SECONDS_BEFORE_QUIZ_LOAD * 1000);
