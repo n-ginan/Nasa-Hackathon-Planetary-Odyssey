@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackathon Gods</title>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,567&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,567&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- css -->
-    <link rel="stylesheet" href="../static/css/proxima.css">
-    <link rel="stylesheet" href="../static/css/common.css">
-</head>
+    <link rel="stylesheet" href="../static/css/proxima.css" />
+    <link rel="stylesheet" href="../static/css/common.css" />
+  </head>
 
-<body>
-    <img id="rock" src="../static/res/rock.png"/>
-     <!-- looks bad positioning sa preview pero ok naman sa flask for me? -->
-    <div style = "height: 100%; width: 100%;">
-        <!-- maliit rin to sa flask preview -->
-        <div class="subHeading" style="right: 5%; top: 5%; position: absolute; text-align: center;">
-            Arrived at
-        </div>
-        <div class="headingTitle" style="right: 5%;  top: 5%; position: absolute; font-size: 128px;">
-            Proxima Centauri B
-        </div>
+  <body>
+    <img id="rock" src="../static/res/rock.png" />
+    <!-- looks bad positioning sa preview pero ok naman sa flask for me? -->
+    <div style="height: 100%; width: 100%">
+      <!-- maliit rin to sa flask preview -->
+      <div
+        class="subHeading"
+        style="right: 5%; top: 5%; position: absolute; text-align: center"
+      >
+        Arrived at
+      </div>
+      <div
+        class="headingTitle"
+        style="right: 5%; top: 5%; position: absolute; font-size: 128px"
+      >
+        Proxima Centauri B
+      </div>
 
-        <div class="gradientSmall"></div>
+      <div class="gradientSmall"></div>
 
-        <div class="headingSmall" 
-            style="padding: 10px; left: 5%; right: 5%; bottom: 10%; position: absolute;">
-            <strong style="font-size: 140%;">Space Fact!</strong> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare, magna et commodo tempus, velit metus viverra massa, in elementum dui augue at lectus.
-            <br /><i class="headingSmall" style="color:darkgray;">Sky at Night Magazine 2024</i>
-        </div>
+      <div
+        class="headingSmall"
+        style="
+          padding: 10px;
+          left: 5%;
+          right: 5%;
+          bottom: 10%;
+          position: absolute;
+        "
+      >
+        <strong style="font-size: 140%">Space Fact!</strong> <br /><span
+          id="spaceFactText"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          ornare, magna et commodo tempus, velit metus viverra massa, in
+          elementum dui augue at lectus.</span
+        >
+        <br /><i class="headingSmall" style="color: darkgray"
+          >Sky at Night Magazine 2024</i
+        >
+      </div>
     </div>
-</body>
+  </body>
 </html>
