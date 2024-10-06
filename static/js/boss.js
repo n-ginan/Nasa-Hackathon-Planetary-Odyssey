@@ -10,12 +10,18 @@ class Boss {
     this.#codeName = codeName;
     this.#name = name;
     this.#questions = questions;
+
+    this.#correctAnswers = [];
+    for (let question of this.#questions) {
+      this.#correctAnswers.push(question.getCorrectAnswer());
+    }
   }
 
   // Private variables
   #codeName;
   #name;
   #questions;
+  #correctAnswers;
 
   /**
    * @returns {string} The code name of the boss.
@@ -36,6 +42,10 @@ class Boss {
    */
   getQuestions() {
     return this.#questions;
+  }
+
+  getCorrectAnswers() {
+    return this.#correctAnswers;
   }
 }
 
