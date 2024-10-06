@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/static/css/quiz.css" />
-  </head>
-  <body>
-    <span id="bossCode" hidden>{{ boss_code }}</span>
-    <div class="main">
-      <div class="quiz">
-        <div class="question">
-          <h1 id="questionText">[Quiz Question]</h1>
-          <div>
-            <h3 id="choiceA">A. answer choice</h3>
-            <h3 id="choiceB">B. answer choice</h3>
-            <h3 id="choiceC">C. answer choice</h3>
-            <h3 id="choiceD">D. answer choice</h3>
-          </div>
-          <div class="answer-buttons">
-            <button id="choiceBtnA">A</button>
-            <button id="choiceBtnB">B</button>
-            <button id="choiceBtnC">C</button>
-            <button id="choiceBtnD">D</button>
-          </div>
+    <link rel="stylesheet" href="/static/css/quiz.css">
+</head>
+<body>
+    <di class="hero">
+        <div class="neilLives">
+            <img src="/static/res/niel_icon.png" alt="">
+            <div class="livesLeft">
+                <img src="/static/res/heart.png" alt="">
+                <img src="/static/res/heart.png" alt="">
+                <img src="/static/res/heart.png" alt="">
+            </div>
         </div>
-      </div>
+        <div class="quizArea">
+            <div class="question">
+                <h1 id="questionText">[Quiz Question]</h1>
+            </div>
+            <div class="answerChoices">
+                <h3 id="choiceA">A. answer choice</h3>
+                <h3 id="choiceB">B. answer choice</h3>
+                <h3 id="choiceC">C. answer choice</h3>
+                <h3 id="choiceD">D. answer choice</h3>
+            </div>
+            <div class="answer-buttons">
+                <button id="choiceBtnA">A</button>
+                <button id="choiceBtnB">B</button>
+                <button id="choiceBtnC">C</button>
+                <button id="choiceBtnD">D</button>
+            </div>
+        </div>
     </div>
-    <script type="module" src="/static/js/quiz_simulator.js"></script>
-  </body>
+</body>
 </html>

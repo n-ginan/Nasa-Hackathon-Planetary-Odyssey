@@ -92,12 +92,12 @@ let previousPlanetPic = document.getElementsByClassName("previousPlanetPic")[0];
 let nextPlanetPic = document.getElementsByClassName("nextPlanetPic")[0];
 
 let planetPictures = [
-    '/static/res/proxima_centauri_b.PNG',
-    '/static/res/planet3.png',
-    '/static/res/planet4.png',
-    '',
-    '',
-    '',
+    '/static/res/proxima_centauri_b_planet.PNG',
+    '/static/res/wolf_1061_c.png',
+    '/static/res/Epsilon_eridani_b.png',
+    '/static/res/Epsilon_eridani_b.png',
+    '/static/res/Epsilon_eridani_b.png',
+    '/static/res/Epsilon_eridani_b.png',
 ]
 
 // Buttons functionality
