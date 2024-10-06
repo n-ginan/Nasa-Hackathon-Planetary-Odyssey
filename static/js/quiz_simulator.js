@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Player health components
   let playerHeartCount = 3;
-  const pathToBrokenHeartImg = "/static/res/broken_heart.png";
+  const pathToBrokenHeartImg = "/static/res/heart_broken.png";
   const hearts = {
     1: document.getElementById("heart1"),
     2: document.getElementById("heart2"),
@@ -64,48 +64,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Utility functions
   function setChoices() {
-    if (questionIndex > questions.length) {
+    if (questionIndex >= questions.length) {
       window.location.href = `/boss-transition?boss_code=${bossCode}&transition_type=defeat`;
       return;
     }
+
     const currentQuestion = questions[questionIndex];
     questionContent.innerText = currentQuestion.getQuestion();
     let choiceIndex = 0;
+
+    // Remove any previously added event listeners before setting new ones
+    for (let letter in choicesBtn) {
+      const button = choicesBtn[letter];
+      button.replaceWith(button.cloneNode(true)); // Cloning removes all event listeners
+      choicesBtn[letter] = document.getElementById(`choiceBtn${letter}`); // Get fresh button element
+    }
+
     for (let letter in choicesBtn) {
       document.getElementById(`choice${letter}`).innerText =
         currentQuestion.getChoices()[choiceIndex++];
-      choicesBtn[letter].addEventListener("click", () => {
+
+      const onChoiceClick = () => {
         if (letter === correctAnswers[questionIndex]) {
           questionIndex++;
-          setChoices();
+          setChoices(); // Move to next question
         } else {
           alert("Wrong answer, you have lost one heart!");
           damagePlayer();
         }
-      });
-    }
-  }
+      };
 
-  function countCorrectAnswers() {
-    const correctAnswers = TOI_1231_B.getCorrectAnswers(); // Fixed name
-    let count = 0;
-    for (let i = 0; i < choicesChosen.length; i++) {
-      if (correctAnswers[i] === choicesChosen[i]) {
-        count++;
-      }
+      choicesBtn[letter].addEventListener("click", onChoiceClick);
     }
-    return count;
   }
 
   function damagePlayer() {
-    hearts[playerHeartCount--].setAttribute("src", pathToBrokenHeartImg); // Set path to broken heart
+    // Set path to broken heart & reduce player health
+    hearts[playerHeartCount--].setAttribute("src", pathToBrokenHeartImg);
+
+    // Player death
     if (playerHeartCount <= 0) {
-      alert("You have lost all your hearts!");
-      window.location.href = `/boss-transition?boss_code${bossCode}&transition_type=encounter`;
+      setTimeout(() => {
+        alert("You have lost all your hearts!");
+        window.location.href = `/boss-transition?boss_code=${bossCode}&transition_type=encounter`;
+      }, 200);
     }
   }
 
-  // onReady functions
+  // onReady
   if (questions && questions.length > 0) {
     setChoices();
   } else {

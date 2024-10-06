@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Boss Fight!</title>
     <link rel="stylesheet" href="/static/css/quiz.css" />
   </head>
   <body>
     <span id="bossCode" hidden>{{ boss_code }}</span>
+
+    <!-- To make the image load in the client side and make it accessible via JavaScript manipulation -->
+    <img src="/static/img/heart_broken.png" hidden />
+
     <div class="hero">
       <div class="neilLives">
         <img src="/static/res/niel_icon.png" alt="" />
