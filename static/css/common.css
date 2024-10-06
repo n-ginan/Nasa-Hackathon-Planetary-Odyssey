@@ -1,0 +1,73 @@
+/* css for elements with common css */
+
+.headingTitle{
+    text-align: center; 
+    color: white; 
+    font-size: 200px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    line-height: 240px; 
+    word-wrap: break-word
+} 
+
+.headingSmall{
+    color: white; 
+    font-size: 32px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    line-height: 44.80px; 
+    word-wrap: break-word
+}
+
+.subHeading{
+    color: white; 
+    font-size: 64px; 
+    font-family: Unispace; 
+    font-weight: 700; 
+    letter-spacing: 10px; 
+    word-wrap: break-word;
+}
+
+.gradient{
+    width: 100%; 
+    height: 100%; 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    z-index: 2; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(5.02, 1.02, 10.63, 0.86) 86%, black 100%);
+}
+
+.gradientSmall{
+    width: 100%; 
+    height: 40%; 
+    left: 0; 
+    bottom: 0; 
+    position: absolute; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+.buttonText {
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+    font-size: 23px; 
+    font-family: Unispace; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+
+.buttonStyle {
+    padding-top: 32px; 
+    padding-bottom: 32px; 
+    padding-left: 62px; 
+    padding-right: 63px; 
+    background: #3C2065; 
+    box-shadow: 9px 10px 7.099999904632568px rgba(0, 0, 0, 0.25); 
+    border-radius: 47px;
+    justify-content: center; 
+    align-self: center;
+    display: inline-flex;
+}

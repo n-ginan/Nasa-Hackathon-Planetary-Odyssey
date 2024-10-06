@@ -11,6 +11,10 @@ class WebApp:
     @app.route("/loading")
     def loading():
         return render_template("loading.html")
+
+    @app.route("/intro")
+    def intro():
+        return render_template("intro.html")
     
     @app.route("/proxima")
     def proxima():
