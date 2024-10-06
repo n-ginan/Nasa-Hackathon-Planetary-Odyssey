@@ -31,9 +31,7 @@ class WebApp:
 
     @app.route("encounted-boss")
     def encountered_boss():
-        # HTML file not created yet
-        # GET request for this one
-        return render_template("", boss_name=request.args.get("boss"))
+        return render_template("boss.html", boss_name=request.args.get("boss"))
 
     @app.route("/defeated-boss", methods=["POST"])
     def defeated_boss():
