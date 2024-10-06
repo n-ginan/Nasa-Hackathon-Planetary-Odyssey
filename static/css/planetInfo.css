@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url(/static/res/space.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.planetDetails {
+    color: #fff;
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.planetDetails p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+.imageContainer{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer img {
+    height: 500px;
+    width: 500px;
+}
+
+
+
