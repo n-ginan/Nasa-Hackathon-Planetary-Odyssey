@@ -37,6 +37,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function countCorrectAnswers() {
+    const correctAnswers = TOI_1234_B.getCorrectAnswers();
+    let count = 0;
+    for (let i = 0; i < choicesChosen.length; i++) {
+      if (correctAnswers[i] === choicesChosen[i]) {
+        count++;
+      }
+    }
+    return count;
+  }
+
   // onReady functions
   setChoices();
 });
