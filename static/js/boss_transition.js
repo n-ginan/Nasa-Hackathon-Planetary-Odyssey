@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       break;
     case "EPSILON_ERIDANI_B":
       bossName = EPSILON_ERIDANI_B.getName();
-      nextBossCode = "GLIESE_832_C";
+      // nextBossCode = "GLIESE_832_C"; Note: Project is limited to 5 bosses so the 6th boss might not get used
       break;
     case "GLIESE_832_C":
       bossName = GLIESE_832_C.getName();
